@@ -9,6 +9,7 @@ var gulp = require('gulp'),
 	concat = require('gulp-concat'),
 	uglify = require('gulp-uglify'),
 	buffer = require('vinyl-buffer'),
+	deploy = require('gulp-gh-pages'),
 	spritesmith = require('gulp.spritesmith'),
 	jade = require('gulp-jade');
 
@@ -93,7 +94,7 @@ gulp.task('fonts', function() {
 })
 
 gulp.task('copy', function() {
-	return gulp.src(['favicon.ico', 'robots.txt'])
+	return gulp.src(['favicon.ico', 'robots.txt', 'CNAME'])
 		.pipe(gulp.dest(publicDir))
 		.pipe(connect.reload());
 });
@@ -108,3 +109,13 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['connect', 'build', 'watch']);
+
+gulp.task('deploy', function () {
+    var options = {
+    	remoteUrl: "git@github.com:eduardsi/devchampions.git",
+    	branch: "gh-pages"
+    }
+
+    return gulp.src(['./www/**/*'])
+        .pipe(deploy(options));
+});
