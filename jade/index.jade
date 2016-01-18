@@ -1,0 +1,114 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1")
+
+		title= "DevChampions – Relevant trainings for IT professionals"
+		meta(name="description" content="DevChampions offers high-quality trainings for developers and IT professionals from the Baltics. We specialize, but are not limited to engineering practices, software architecture, automation and Scrum certification.")
+		meta(name="keywords" content="dev training, training for developers, scrum certification")
+
+		//- favicon
+		link(rel="shortcut icon" href="favicon.ico")
+
+		//- styles
+		//- link(rel="stylesheet", href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
+		link(rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab:300,700|Open+Sans:700,700italic,400&subset=latin,latin-ext")
+		link(rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+		link(rel="stylesheet" href="css/style.css")
+	body
+		script(src="js/main.js")
+
+		.header 
+			.container
+				.menu
+					a(href="#about") About us
+					a(href="#trainings") Trainings
+					a(href="#contacts") Contacts
+				.logo
+					h1 
+						a(href="#")
+							//- i(class="fa fa-trophy") &nbsp; 
+							img.achivement(src="/img/achivement.png" alt="achivement")
+							strong dev
+							| champions
+				h2 Relevant trainings for you and your tech peers directly from industry influencers.
+				input#champion(type="button" value="Become a champion") 
+
+		.about#about
+			.container
+				h1 About
+				p DevChampions offers high-quality trainings for developers and IT professionals from the Baltics. We specialize, but are not limited to engineering practices, software architecture, automation, Agile methodologies and soft skills. We carefully choose only the best trainers, because we value your time and believe you must learn directly from industry influencers. People choose us because we offer:
+
+
+				.why
+					section.practitioners
+						i(class="fa fa-diamond")
+						h2 The best trainers
+						p DevChampions center is led by industry practioners (we founded 
+							a(href="http://latcraft.lv") Latvian Software Craftsmanship Community 
+							| and 
+							a(href="http://devternity.com") DevTernity Conference
+							| ). That lets us choose only the best trainers - we know those who deliver excellent trainings and those whom to avoid. 
+					section.exclusive
+						i(class="fa fa-balance-scale")
+						h2 Theory and practice balance
+						| Theory without practice is worthless. Nevertheless, in order to understand the topic you need to build strong theoretical foundation. Our trainings offer great mix of theory, hands-on exercises and teamwork.
+					section.certification
+						i(class="fa fa-certificate")
+						h2 Certification
+						| For every successfully accomplished training you earn a certificate. Stay out of the crowd by sharing your achivements with prospective employers, community and peers.
+				p &nbsp;
+				p 
+					strong Didn't find a training for you? 
+					| No problem, let us know what topic you are interested in and we will handle all organisational aspects including finding the best trainer, price negotiation and logistics.
+		.trainings#trainings
+			.container
+				h1 Scheduled trainings
+				each training in trainings
+					section.training
+						header
+							h2.title #{training.title}						
+							each certificate in training.certificates
+								img(src='/img/' + certificate + '.png' alt="Certificate")
+							h3 #{training.date}, #{training.location}						
+						section
+							.trainer
+								div(class='pic icon-' + training.trainer.pic)
+								div
+									a(href='https://twitter.com/' + training.trainer.twitter)
+										img(src="/img/twitter.png" alt="#{training.trainer.twitter}")
+									strong &nbsp;#{training.trainer.name}
+									br
+									| #{training.trainer.title}
+							.description
+								| #{training.description} 
+								a(href="#") More info
+		.footer#contacts
+			.container
+				h1 Contacts
+				.contacts
+					p 
+						i(class="fa fa-envelope-o") &nbsp;
+						a(href="mailto:hello@devchampions.com") hello@devchampions.com
+					p
+						i(class="fa fa-phone") 
+						|  + 371 288 14 170 (
+						a(href="http://sizovs.net") Eduards Sizovs
+						|, Founder)
+				.copyright
+					p.center Developed and maintained with <i class="fa fa-heart"></i> by 
+						a(href="http://latcraft.lv") Latvian Software Craftsmanship Community
+
+					| © 
+					a(href="http://firmas.lv/profile/craftsmans-passion-sia/40103922894") Craftsmans Passion SIA 
+					| 2016
+		script.
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-72580529-1', 'auto');
+			ga('send', 'pageview');					
+</script>
