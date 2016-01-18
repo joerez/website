@@ -180,6 +180,7 @@ body {
 			}		  				  	  		
 	  	}
 	  	.description {
+	  		padding-left: 30px;
 	  		@include span-columns(9);	
 			@include media($mobile) {
 				margin-top: 30px;
@@ -189,6 +190,20 @@ body {
 	  	}
   	}
 }
+
+.actions {
+	margin-top: 20px;
+	.action {
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		background-color: #5E98BA;
+		padding: 15px;
+		&:hover {
+			background-color: #3d82ab;
+			color: white;
+		}
+	}
+}
+
 
 .footer {
 	@include outer-container;

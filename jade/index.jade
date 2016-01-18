@@ -61,7 +61,7 @@ html
 				p &nbsp;
 				p 
 					strong Didn't find a training for you? 
-					| No problem, let us know what topic you are interested in and we will handle all organisational aspects including finding the best trainer, price negotiation and logistics.
+					| No problem, let us know what topic you are interested in and we will handle all organisational aspects including finding the best trainer, price negotiation and logistics. Please let us know if you prefer in-house training.
 		.trainings#trainings
 			.container
 				h1 Scheduled trainings
@@ -71,7 +71,7 @@ html
 							h2.title #{training.title}						
 							each certificate in training.certificates
 								img(src='/img/' + certificate + '.png' alt="Certificate")
-							h3 #{training.date}, #{training.location}						
+							h3 #{training.date}, #{training.location}
 						section
 							.trainer
 								div(class='pic icon-' + training.trainer.pic)
@@ -83,7 +83,8 @@ html
 									| #{training.trainer.title}
 							.description
 								| #{training.description} 
-								a(href="#") More info
+								.actions
+									a.action(href="#") More information
 		.footer#contacts
 			.container
 				h1 Contacts
