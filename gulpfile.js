@@ -111,7 +111,7 @@ gulp.task('jade', function() {
 });
 
 gulp.task('uglify', function() {
-	gulp.src(['js/zepto.min.js', 'js/**/*.js', 'js/*.js'])
+	gulp.src(['js/jquery.min.js', 'js/main.js'])
 		.pipe(concat('main.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest(publicDir + '/js'))

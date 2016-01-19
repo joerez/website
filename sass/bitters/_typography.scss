@@ -5,6 +5,13 @@
     src: url(/fonts/Economica-normal-400.woff2) format('woff2');
 }
 
+@font-face {
+    font-family: 'Economica';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Economica'), local('Economica-Regular'), url(/fonts/Economica-normal-400.svg) format('svg')
+}
+
 body {
   color: $base-font-color;
   font-family: $base-font-family;
