@@ -78,6 +78,9 @@ header#header {
     h1 {
     	text-align: center;
     }
+	@include media($mobile) {
+		padding: 20px;
+	}    
 }
 
 .training {
