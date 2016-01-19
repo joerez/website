@@ -10,10 +10,17 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	buffer = require('vinyl-buffer'),
 	deploy = require('gulp-gh-pages'),
+	combine = require('gulp-jsoncombine'),
 	spritesmith = require('gulp.spritesmith'),
-	jade = require('gulp-jade');
+	util = require('gulp-util'),
+	data = require('gulp-data'),
+	jade = require('gulp-jade'),
+	glob = require('glob'),
+	path = require('path'),
+	_ = require('lodash');
 
 var publicDir = 'www'
+var tempDir = "tmp"
 
 
 gulp.task('connect', function() {
@@ -68,13 +75,40 @@ gulp.task('sass', function () {
 });
 
 gulp.task('jade', function() {
-	var trainings = require('./data/trainings.json');
-	gulp.src('./jade/*.jade')
+
+
+	var trainings = function() {
+		var files = glob.sync("jade/*/index.json");
+		var g = _.chain(files)
+			.map(function(file) { 
+				var r = require('./' + file); 
+				var dir = path.dirname(file).split(path.sep)[1];
+				var z = _.extend({}, r, {url: dir});
+				console.log(z); 
+				return z;
+			})
+			.value();
+		console.log(g);
+		return g;
+	}
+
+	gulp.src('./jade/index.jade')		
 	    .pipe(jade({
-	    	pretty: true,
 	    	locals: {
-	    		"trainings": trainings
-	    	}
+	    		"trainings": trainings()
+	    	},
+	    	pretty: true
+	    }))
+	    .pipe(gulp.dest(publicDir))
+	    .pipe(connect.reload());
+
+	gulp.src('./jade/*/*.jade')
+		.pipe(data(function(file_) {
+			var file = path.parse(file_.path)
+			return require(file.dir + "/" + file.name + ".json");
+	    }))		
+	    .pipe(jade({
+	    	pretty: true
 	    }))
 	    .pipe(gulp.dest(publicDir))
 	    .pipe(connect.reload());
