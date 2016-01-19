@@ -1,23 +1,12 @@
 @import "bitters/base";
-
 @import "trainers.css";
-
-body {
-	margin: 0;
-}
 
 .fa-heart {
 	color: red;
 }
 
-.header {
-	background-image: url("/img/background.png");
-	background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;	
-	text-align: center;
-	height: 650px;
-	color: $light-gray;
+header#header {
+	@include header()
 	.logo {
 		.achivement {
 			position: relative;
@@ -32,20 +21,6 @@ body {
 	input {
 		margin-top: 30px;
 	}
-
-	h1 {
-		font-size: 3em !important;
-  		@include media($mobile) {
-  			font-size: 2em !important;
-		}				
-	}
-
-	h2 {
-		font-weight: normal;
-  		@include media($mobile) {
-  			font-size: 1em !important;
-		}				
-	}
 }
 
 
@@ -58,9 +33,8 @@ body {
 
 .about {
 		text-align: center;
-		color: white;
-	    background-image: linear-gradient(60deg, #3d82ab 50%, #5E98BA 50%);
-
+		color: $base-dark-font-color;
+		@include sexy-gradient();
 	    .why {
 			@include outer-container;
 		  	.practitioners {
@@ -83,36 +57,17 @@ body {
     			@include media($mobile) {
 					@include span-columns(12);
     			}		  		
-		  	}	    
-
-		  	.fa {
-		  		font-weight: normal;
-		  		font-size: 100px;
-			    border-radius: 100%;
-			    border: 1px solid #4dac71;
-			    display: inline-block;
-			    height: 2em;
-			    line-height: 2em;
-			    text-align: center;
-			    width: 2em;		  		
-			    border-color: #ffffff;
-			    margin-bottom: 0.5em;			    
-		  	}			  	
+		  	}	    		  	
 	    }
 }
 
-.trainings {
-    h2 {
-    	font-weight: normal;
-    }
-}
 
 .logo {
-	font-family: 'PT Sans';
 	h1 {
-		font-size: 3em;
+		font-weight: bold;
 		strong {
-			border-bottom: 3px solid #5E98BA;
+			font-weight: bold;
+			border-bottom: 3px solid $light-blue;
  			display: inline;			
 		}	
 	}
@@ -121,7 +76,6 @@ body {
 .container {
 	padding: 50px;
     h1 {
-    	font-size: 2em;
     	text-align: center;
     }
 }
@@ -132,13 +86,10 @@ body {
 	.trainer {
 		text-align: center;
 		.pic {
+			@include circle();
 			margin-left: auto;
 			margin-right: auto;
 			margin-bottom: 25px;
-			@include border-left-radius(100px);
-			@include border-right-radius(100px);
-			@include border-bottom-radius(100px);
-			@include border-left-radius(100px);			  
 		}
 	}
 
@@ -166,8 +117,6 @@ body {
 
 
 	h3 {
-		font-size: 1em;
-		font-weight: normal;
 		margin-bottom: 50px;
 	}
 
@@ -193,39 +142,8 @@ body {
 
 .actions {
 	margin-top: 20px;
-	.action {
-		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		background-color: #5E98BA;
-		padding: 15px;
-		&:hover {
-			background-color: #3d82ab;
-			color: white;
-		}
-	}
 }
 
-
-.footer {
-	@include outer-container;
-	color: white;
-	background-color: #3d82ab;
-
-	.contacts {
-		@include span-columns(6);		
-		@include media($mobile) {
-			text-align: center;
-			@include span-columns(12);
-		}
-	}
-
-	.copyright {
-		@include span-columns(6);		
-		@include media($mobile) {
-			margin-top: 30px;
-			text-align: center;
-			@include span-columns(12);
-		}
-		text-align: right;
-		margin-bottom: 80px;
-	}
+footer {
+	@include footer
 }

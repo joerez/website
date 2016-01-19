@@ -1,1 +1,86 @@
-| #{title}
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1")
+
+		title= "DevChampions – Relevant trainings for IT professionals"
+		meta(name="description" content="DevChampions offers high-quality trainings for developers and IT professionals from the Baltics. We specialize, but are not limited to engineering practices, software architecture, automation and Scrum certification.")
+		meta(name="keywords" content="dev training, training for developers, scrum certification")
+
+		//- favicon
+		link(rel="shortcut icon" href="/favicon.ico")
+
+		//- styles
+		//- link(rel="stylesheet", href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
+		link(rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab:300,700|Open+Sans:700,700italic,400&subset=latin,latin-ext")
+		link(rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+		//- link(rel="stylesheet" href="/css/style.css")
+		link(rel="stylesheet" href="/css/training.css")
+	body
+		script(src="/js/main.js")
+		header#header 
+			.container
+				.menu
+					a(href="/") ← To training list
+				.logo
+					h1 
+						a(href="#")
+							if badge
+								img(src='/img/' + badge + '.png' alt="Certificate")
+							strong  #{title}
+				h2 #{date}, #{location}
+		main
+			section#trainer
+				.container
+					p Ask us for in-house training
+					section.training
+						header
+							h1.title Trainer
+						section
+							.trainer
+								div(class='pic icon-' + trainer.pic)
+								div
+									a(href='https://twitter.com/' + trainer.twitter)
+										img(src="/img/twitter.png" alt="#{trainer.twitter}")
+									strong &nbsp;#{trainer.name}
+									br
+									| #{trainer.title}
+							.description
+								include trainer.jade
+			section#description
+				.container
+					header
+						h1 Course description
+			section#offers
+				.container
+					.earlyPack.offer
+						h2 Early Pack
+							super *
+						//- h2 3+ tickets 
+						h3 Sale ends on #{offers[0].due}
+						.price
+							.child #{offers[0].price}€
+						.actions
+							a.action(href="#") Book now
+					.earlyBird.offer
+						h2 Early Bird 
+						h3 Sale ends on #{offers[1].due}
+						.price 
+							.child #{offers[1].price}€
+						.actions
+							a.action(href="#") Book now						
+					.wiseman.offer
+						h2 Wiseman
+						h3 Sale ends on #{offers[2].due}
+						.price 
+							.child #{offers[2].price}€
+						.actions
+							a.action(href="#") Book now		
+				.pricing-clarify
+					p * The price is applicable when you book 3 and more seats
+					p ** Prices do not include VAT (if applicable)				
+					p *** Please contact us for affiliate opportunities				
+		include ../footer.jade
+		include ../ga.jade
+		include ../tawk.jade

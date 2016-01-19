@@ -1,0 +1,82 @@
+.roundy {
+  font-weight: normal;
+  font-size: 100px;
+  border-radius: 100%;
+  border: 1px solid #4dac71;
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  width: 2em;         
+  border-color: #ffffff;
+  margin-bottom: 0.5em;         
+} 
+
+@mixin roundy($text-color, $background-color, $border-color) {
+  color: $text-color;
+  font-size: 70px;
+  border-radius: 100%;
+  background-color: $background-color;
+  border: 1px solid $border-color;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;  
+
+  .child {
+    padding: 20px;
+    @include center;
+  }
+} 
+
+@mixin center($horizontal: true, $vertical: true) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin sexy-gradient {
+  background-image: linear-gradient(60deg, $dark-blue 50%, $light-blue 50%);
+}
+
+@mixin circle {
+    @include border-left-radius(100%);
+    @include border-right-radius(100%);
+    @include border-bottom-radius(100%);
+    @include border-left-radius(100%);        
+}
+
+@mixin header {
+  background-image: url("/img/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  text-align: center;
+  color: $base-dark-font-color;
+}
+
+@mixin footer {
+  @include outer-container;
+  color: $base-dark-font-color;
+  background-color: $dark-blue;
+
+  .contacts {
+    @include span-columns(6);   
+    @include media($mobile) {
+      text-align: center;
+      @include span-columns(12);
+    }
+  }
+
+  .copyright {
+    @include span-columns(6);   
+    @include media($mobile) {
+      margin-top: 30px;
+      text-align: center;
+      @include span-columns(12);
+    }
+    text-align: right;
+    margin-bottom: 80px;
+  }
+}

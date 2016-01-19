@@ -12,5 +12,5 @@ $medium-tablet: 992px;
 $medium-desktop: 1280px;
 
 $mobile: new-breakpoint(max-width $medium-phone);
-$tablet: new-breakpoint(min-width $medium-tablet);
+$tablet: new-breakpoint(max-width $medium-tablet);
 $desktop: new-breakpoint(min-width $medium-desktop);

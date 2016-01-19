@@ -9,17 +9,17 @@ html
 		meta(name="keywords" content="dev training, training for developers, scrum certification")
 
 		//- favicon
-		link(rel="shortcut icon" href="favicon.ico")
+		link(rel="shortcut icon" href="/favicon.ico")
 
 		//- styles
 		//- link(rel="stylesheet", href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
 		link(rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab:300,700|Open+Sans:700,700italic,400&subset=latin,latin-ext")
 		link(rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
-		link(rel="stylesheet" href="css/style.css")
+		link(rel="stylesheet" href="/css/style.css")
 	body
-		script(src="js/main.js")
+		script(src="/js/main.js")
 
-		.header 
+		header#header 
 			.container
 				.menu
 					a(href="#about") About us
@@ -43,7 +43,7 @@ html
 
 				.why
 					section.practitioners
-						i(class="fa fa-diamond")
+						i(class="fa roundy fa-diamond")
 						h2 The best trainers
 						p DevChampions center is led by industry practioners (we founded 
 							a(href="http://latcraft.lv") Latvian Software Craftsmanship Community 
@@ -51,11 +51,11 @@ html
 							a(href="http://devternity.com") DevTernity Conference
 							| ). That lets us choose only the best trainers - we know those who deliver excellent trainings and those whom to avoid. 
 					section.exclusive
-						i(class="fa fa-balance-scale")
+						i(class="fa roundy fa-balance-scale")
 						h2 Theory and practice balance
 						| Theory without practice is worthless. Nevertheless, in order to understand the topic you need to build strong theoretical foundation. Our trainings offer great mix of theory, hands-on exercises and teamwork.
 					section.certification
-						i(class="fa fa-certificate")
+						i(class="fa roundy fa-certificate")
 						h2 Certification
 						| For every successfully accomplished training you earn a certificate. Stay out of the crowd by sharing your achivements with prospective employers, community and peers.
 				p &nbsp;
@@ -69,8 +69,8 @@ html
 					section.training
 						header
 							h2.title #{training.title}						
-							each certificate in training.certificates
-								img(src='/img/' + certificate + '.png' alt="Certificate")
+							if training.badge
+								img(src='/img/' + training.badge + '.png' alt="Certificate")
 							h3 #{training.date}, #{training.location}
 						section
 							.trainer
@@ -85,42 +85,6 @@ html
 								| #{training.description} 
 								.actions
 									a.action(href="#{training.url}") More information
-		.footer#contacts
-			.container
-				h1 Contacts
-				.contacts
-					p 
-						i(class="fa fa-envelope-o") &nbsp;
-						a(href="mailto:hello@devchampions.com") hello@devchampions.com
-					p
-						i(class="fa fa-phone") 
-						|  + 371 288 14 170 (
-						a(href="http://sizovs.net") Eduards Sizovs
-						|, Founder)
-				.copyright
-					p.center Developed and maintained with <i class="fa fa-heart"></i> by 
-						a(href="http://latcraft.lv") Latvian Software Craftsmanship Community
-
-					| © 
-					a(href="http://firmas.lv/profile/craftsmans-passion-sia/40103922894") Craftsmans Passion SIA 
-					| 2016
-		script.
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-72580529-1', 'auto');
-			ga('send', 'pageview');					
-
-		
-		script.
-			var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-			(function(){
-			var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-			s1.async=true;
-			s1.src='https://embed.tawk.to/569d5e3aaeafd72017dd8e5b/default';
-			s1.charset='UTF-8';
-			s1.setAttribute('crossorigin','*');
-			s0.parentNode.insertBefore(s1,s0);
-			})();
+		include footer.jade
+		include ga.jade
+		include tawk.jade

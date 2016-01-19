@@ -79,17 +79,13 @@ gulp.task('jade', function() {
 
 	var trainings = function() {
 		var files = glob.sync("jade/*/index.json");
-		var g = _.chain(files)
-			.map(function(file) { 
-				var r = require('./' + file); 
-				var dir = path.dirname(file).split(path.sep)[1];
-				var z = _.extend({}, r, {url: dir});
-				console.log(z); 
-				return z;
-			})
-			.value();
-		console.log(g);
-		return g;
+		return _.chain(files)
+					.map(function(file) { 
+						var json = require('./' + file); 
+						var parentDir = path.dirname(file).split(path.sep)[1];
+						return _.extend({}, json, {url: parentDir});
+					})
+				.value();
 	}
 
 	gulp.src('./jade/index.jade')		
@@ -102,7 +98,7 @@ gulp.task('jade', function() {
 	    .pipe(gulp.dest(publicDir))
 	    .pipe(connect.reload());
 
-	gulp.src('./jade/*/*.jade')
+	gulp.src('./jade/*/index.jade')
 		.pipe(data(function(file_) {
 			var file = path.parse(file_.path)
 			return require(file.dir + "/" + file.name + ".json");
