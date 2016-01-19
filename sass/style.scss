@@ -1,10 +1,6 @@
 @import "bitters/base";
 @import "trainers.css";
 
-.fa-heart {
-	color: red;
-}
-
 header#header {
 	@include header()
 	.logo {
