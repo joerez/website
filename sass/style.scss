@@ -6,7 +6,7 @@ header#header {
 	.logo {
 		.achivement {
 			position: relative;
-			top: 50px;
+			top: 30px;
 	  		@include media($mobile) {
 	  			top: 20px;
 	  			width: 80px;
