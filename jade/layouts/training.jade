@@ -1,0 +1,78 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1")
+		title= "DevChampions – Relevant trainings for IT professionals"
+		meta(name="description" content="#{title} Training and Certification")
+		meta(name="keywords" content="#{keywords}")
+		link(rel="shortcut icon" href="/favicon.ico")
+		link(rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+		link(rel="stylesheet" href="/css/training.css")
+	body
+		script(src="/js/main.js")
+		header#header 
+			.container
+				.menu
+					a(href="/") ← To training list
+				.logo
+					h1 
+						a(href="#")
+							if badge
+								img.badge(src='/img/' + badge + '.png' alt="Certificate")
+							strong  #{title}
+				h2 #{date}, #{location}
+		main
+			section#description
+				.container
+					header
+						h1 Course description
+					article
+						block description				
+						.shorties
+							section.shorty
+								i(class="fa roundy fa-group")
+								h2 Audience
+								p #{audience}
+							section.shorty
+								i(class="fa roundy fa-certificate")
+								h2 Certification
+								p #{certification}
+							section.shorty
+								i(class="fa roundy fa-globe")
+								h2 Language
+								p #{language}		
+			section#trainer
+				.container
+					section.training
+						header
+							h1.title Trainer
+						section
+							.trainer
+								div(class='pic icon-' + trainer.pic)
+								div
+									a(href='https://twitter.com/' + trainer.twitter)
+										img(src="/img/twitter.png" alt="#{trainer.twitter}")
+									strong &nbsp;#{trainer.name}
+									br
+									| #{trainer.title}
+							.description
+								block trainer
+
+			section#offers
+				.container
+					each offer in offers
+						.offer
+							h2 #{offer.name}
+							h3 Sale ends on #{offer.due}
+							.price
+								.child #{offer.price}€
+							.actions
+								a.action(href="#") Book now
+				.pricing-clarify
+					p * The price is applicable for teams of 3 and more
+					p ** Prices do not include VAT (if applicable)				
+					p *** Please contact us for affiliate opportunities				
+		include ../footer.jade
+		include ../ga.jade
+		include ../tawk.jade

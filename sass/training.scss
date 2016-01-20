@@ -31,6 +31,10 @@ header#header {
 			text-align: center;
 		}
 	}
+
+	h3 strong {
+		font-weight: bold;
+	}
 }
 
 .training {
@@ -53,7 +57,8 @@ header#header {
 	.pic {
 		@include circle();
 		margin-left: auto;
-		margin-right: auto;	
+		margin-right: auto;
+		margin-bottom: 25px;
 	}
 }
 

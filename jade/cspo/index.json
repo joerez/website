@@ -1,12 +1,32 @@
 {
 	"title": "Certified Scrum Product Owner (CSPO)",
 	"subtitle": "Product Owner's Workout",
+	"keywords": "cspo training, cspo certification, product owner certification, scrum product owner training, product owner training",
 	"description": "The training objectives are focused around common product management challenges of different company types: from in-house product development to project-oriented outsourcing-like companies. It helps enable lean product thinking in classical product management cultures by offering modern thinking tools and proven methods. The class is designed to help Product Owners improve their fit and influence throughout the Agile organization to maximize business value and team satisfaction. Hence, it covers all dimensions of “what it takes to be a brilliant Product Owner”: from Stakeholder and Value Management, to mastering the Product Lifecycle and Craftsmanship.",
+	"audience": "The course is oriented towards people who will be taking over Product Owner role and is also suitable for business analysts, product managers, team leaders or Scrum Masters who want to deepen their understanding of Scrum product ownership.",
+	"certification": "You earn CSPO certificate by attending the course. No exam required.",	
+	"language": "The course is taught in English.",	
 	"date": "3-4 May 2016",
 	"location": "Riga, Latvia",
 	"badge": "cspo",
 	"tags": ["agile processes"],		
-	"ealyBirds": true,
+	"offers": [
+		{
+			"name": "Early Pack",
+			"price": "899",
+			"due": "13 March 2016"
+		},
+		{
+			"name": "Early Bird",
+			"price": "999",
+			"due": "13 March 2016"
+		},
+		{
+			"name": "Wiseman",
+			"price": "1199",
+			"due": "30 April 2016"
+		}
+	],
 	"trainer": {
 		"twitter": "alexeykri",					
 		"name": "Alexey Krivitsky",
