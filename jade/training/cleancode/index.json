@@ -1,0 +1,37 @@
+{
+	"title": "Effective Coding Principles and Patterns in Java",
+	"subtitle": "",
+	"keywords": "clean code training, java clean code, clean code rules, writing clean code",
+	"description": "Do you want to feel proud of your work? Write code that your colleagues will admire? Move fast without compromising quality? Build long-living software that is easy and fun to maintain? Get out of technical debt without big upfront time investment? Professionally articulate technical decisions to your team and management? Then this course is for you. During this intensive, practical and entertaining 2-day course you will learn principles, practices and patterns for writing readable, maintainable and effective code in Java 8.",
+	"audience": "Java professionals and teams willing to significantly improve and broaden their Java coding expertise.",
+	"certification": "You earn a certificate after completing a practical assignment that will become part of your GitHub portfolio",
+	"language": "The course is taught in English.",
+	"date": "14-15 May 2016",
+	"location": "Riga, Latvia",
+	"badge": "",
+	"book": "https://devchampions.typeform.com/to/tmxAsI",
+	"tags": [ ],
+	"offers": [
+		{
+			"name": "Early Pack",
+			"price": "299",
+			"due": "31 March 2016"
+		},
+		{
+			"name": "Early Bird",
+			"price": "399",
+			"due": "31 March 2016"
+		},
+		{
+			"name": "Wiseman",
+			"price": "499",
+			"due": "30 April 2016"
+		}
+	],
+	"trainer": {
+		"twitter": "eduardsi",			
+		"name": "Eduards Sizovs",
+		"title": "Founder @ Latvian Software Craftsmanship Community",
+		"pic": "eduardsi"
+	}
+}
