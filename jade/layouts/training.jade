@@ -61,18 +61,18 @@ html
 
 			section#offers
 				.container
-					each offer in offers
+					each offer, no in offers
 						.offer
 							h2 #{offer.name}
 							h3 Sale ends on #{offer.due}
 							.price
 								.child #{offer.price}€
 							.actions
-								a.action(href="#") Book now
+								a.action(href="#{book}") Book now
 				.pricing-clarify
 					p * The price is applicable for teams of 3 and more
 					p ** Prices do not include VAT (if applicable)				
-					p *** Please contact us for affiliate opportunities				
+					p *** Please contact us for affiliate opportunities			
 		include ../footer.jade
 		include ../ga.jade
 		include ../tawk.jade
