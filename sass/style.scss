@@ -35,24 +35,15 @@ header#header {
 			@include outer-container;
 		  	.practitioners {
 		  		margin-top: 80px;
-		  		@include span-columns(4);
-    			@include media($mobile) {
-					@include span-columns(12);
-    			}		  				  		
+		  		@include column;  		
 		  	}
 		  	.exclusive {
 		  		margin-top: 80px;		  		
-		  		@include span-columns(4);	
-    			@include media($mobile) {
-					@include span-columns(12);
-    			}		  				  		
+		  		@include column;		  		
 		  	}	    	
 		  	.certification {
 		  		margin-top: 80px;		  		
-		  		@include span-columns(4);	
-    			@include media($mobile) {
-					@include span-columns(12);
-    			}		  		
+    			@include column;
 		  	}	    		  	
 	    }
 }
@@ -70,7 +61,7 @@ header#header {
 }
 
 .container {
-	padding: 50px;
+	padding: 47px;
     h1 {
     	text-align: center;
     }
@@ -122,18 +113,14 @@ header#header {
 	section {
 		@include outer-container;
 	  	.trainer {
-	  		@include span-columns(3);
-			@include media($mobile) {
-				@include span-columns(12);
-			}		  				  	  		
+	  		@include column(3);
 	  	}
 	  	.description {
 	  		padding-left: 30px;
-	  		@include span-columns(9);	
+	  		@include column(9);
 			@include media($mobile) {
 				margin-top: 30px;
 				text-align: center;
-				@include span-columns(12);
 			}		  				  	  		
 	  	}
   	}

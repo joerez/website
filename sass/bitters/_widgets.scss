@@ -16,6 +16,19 @@
   margin-bottom: 0.5em;         
 } 
 
+@mixin column($span: 4, $mobile-span: 12, $tablet-span: 0) {
+  @include span-columns($span);
+    @include media($mobile) {
+      @include span-columns($mobile-span);
+    }             
+
+    @if $tablet-span != 0 {
+      @include media($tablet) {
+        @include span-columns($tablet-span);
+      }                 
+    }
+}
+
 @mixin roundy($text-color, $background-color, $border-color) {
   color: $text-color;
   font-size: 70px;

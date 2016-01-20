@@ -8,15 +8,15 @@
 	"tags": ["agile processes"],
 	"offers": [
 		{
-			"price" : "900",
+			"price" : "899",
 			"due": "13 March 2016"
 		},
 		{
-			"price": "1000",
+			"price": "999",
 			"due": "13 March 2016"
 		},
 		{
-			"price": "1200",
+			"price": "1199",
 			"due": "30 April 2016"
 		}
 	],
