@@ -56,6 +56,16 @@ header#header {
 				color: $dark-blue;
 			}	
 		}	
+
+
+		.quote {
+			hr {
+				border-color: #5E98BA;
+			}
+			font-style: italic;
+			margin-top: 2em;
+			text-align: right;
+		}
 	}	
 }
 
