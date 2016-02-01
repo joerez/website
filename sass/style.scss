@@ -70,6 +70,15 @@ header#header {
 	}    
 }
 
+.trainings {
+	blockquote {
+		border-color: $light-blue;
+		a {
+			color: $light-blue;
+		}		
+	}
+}
+
 .training {
 	@include outer-container;
 	margin-bottom: 100px;

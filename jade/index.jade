@@ -12,7 +12,6 @@ html(itemscope itemtype="http://schema.org/Organization")
 		meta(property="og:type" content="website")
 		meta(property="og:title" content="DevChampions – Relevant trainings for IT professionals")
 		meta(property="og:description" content="DevChampions offers high-quality trainings for developers and IT professionals in the Baltics. We specialize, but are not limited to engineering practices, software architecture, automation and Scrum certification.")
-
 		meta(property="og:image" content="http://devchampions.com/img/index_og.png")
 
 		//- favicon
@@ -32,6 +31,8 @@ html(itemscope itemtype="http://schema.org/Organization")
 						i(class="fa fa-twitter")
 					a(href="https://www.facebook.com/devchampions")
 						i(class="fa fa-facebook")
+					a(href="https://linkedin.com/company/devchampions")
+						i(class="fa fa-linkedin")
 				.logo
 					h1 
 						a(href="/")
@@ -63,11 +64,6 @@ html(itemscope itemtype="http://schema.org/Organization")
 						h2 Certification
 						| For every successfully accomplished training you earn a certificate. Stay out of the crowd by sharing your achivements with prospective employers, community and peers.
 				p &nbsp;
-				p 
-					strong Didn't find a training for you? 
-					| No problem, 
-					a(href="#contacts") let us know 
-					| what topic you are interested in and we will handle all organisational aspects including finding the best trainer, price negotiation and logistics. Please let us know if you prefer in-house training.
 		.trainings#trainings
 			.container
 				h1 Scheduled trainings
@@ -91,6 +87,17 @@ html(itemscope itemtype="http://schema.org/Organization")
 								| #{training.description} 
 								.actions
 									a.action(href="#{training.url}") More information
+				p 
+					blockquote
+						strong Didn't find a training for you? 
+						| No problem, 
+						a.darken(href="#contacts") let us know 
+						| what topic you are interested in and we will handle all organisational aspects including finding the best trainer, price negotiation and logistics. Please let us know if you prefer in-house training.				
+				p
+					blockquote
+						| Never miss a training by 
+						a.darken(href="http://devchampions.us12.list-manage1.com/subscribe?u=116ead2ab26f64dec3cbc60b5&id=c62c07ab37") subscribing
+						|  to our mailing list. We will keep you posted only on major happenings and announcements.
 		include footer.jade
 		include ga.jade
 		include tawk.jade

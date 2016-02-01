@@ -73,6 +73,19 @@ blockquote {
   margin-left: 0;
 }
 
+a.darken {
+  color: $light-blue;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+  border-bottom: 1px dashed $light-blue;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $dark-blue;
+  }
+}
+
 a {
   color: $action-color;
   text-decoration: none;
