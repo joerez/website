@@ -64,7 +64,10 @@ html
 					each offer, no in offers
 						.offer
 							h2 #{offer.name}
-							h3 Sale ends on #{offer.due}
+							if offer.due
+								h3 Sale ends on #{offer.due}
+							else
+								h3 &nbsp;								
 							.price
 								.child #{offer.price}€
 							.actions
