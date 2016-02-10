@@ -1,0 +1,37 @@
+{
+	"title": "Champion Developer: How to Succeed In a Noisy IT World",
+	"subtitle": "",
+	"keywords": "dev skills, how to become a software architect, how to become a team lead, becoming a technica leader",
+	"description": "Writing code is what we - developers, were taught to do. We proudly write clean code, apply eXtreme programming practices, refactor the mess, introduce new frameworks and learn new programming languages. We concentrate on technology so much that we completely forget that only 15% of our success is due to technical knowledge.",
+	"audience": "Developers and teams willing to significantly improve their understanding of IT landscape, productivity and career opportunities.",
+	"certification": "You earn a certificate of participation by attending the course. No exam required.",
+	"language": "The course is taught in English.",
+	"date": "20 May 2016",
+	"location": "Riga, Latvia",
+	"badge": "",
+	"book": "",
+	"tags": [ ],
+	"offers": [
+		{
+			"name": "Early Pack",
+			"price": "149",
+			"due": "25 March 2016"
+		},
+		{
+			"name": "Early Bird",
+			"price": "199",
+			"due": "25 March 2016"
+		},
+		{
+			"name": "Wiseman",
+			"price": "249",
+			"due": "13 May 2016"
+		}
+	],
+	"trainer": {
+		"twitter": "eduardsi",			
+		"name": "Eduards Sizovs",
+		"title": "Founder @ Latvian Software Craftsmanship Community",
+		"pic": "eduardsi"
+	}
+}
