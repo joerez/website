@@ -87,7 +87,6 @@ gulp.task('jade', function() {
 						return _.extend({}, json, {url: parentDir});
 					})
 					.sortBy(function(json) { 
-						console.log(moment(json.date, 'DD MMMM YYYY').unix());
 						return moment(json.date, 'DD MMMM YYYY').unix()
 					})
 				.value();
