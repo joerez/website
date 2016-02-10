@@ -3,14 +3,15 @@ html
 	head
 		meta(charset="utf-8")
 		meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1")
-		title= "DevChampions – Relevant trainings for IT professionals"
-		meta(name="description" content="#{title} Training and Certification")
+		title= "#{title} Training and Certification"
+		meta(name="description" content="#{metaDescription}")
 		meta(name="keywords" content="#{keywords}")
 		link(rel="shortcut icon" href="/favicon.ico")
 		link(rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
 		link(rel="stylesheet" href="/css/training.css")
 	body
 		script(src="/js/main.js")
+		include facebook.jade
 		header#header 
 			.container
 				.menu
@@ -75,6 +76,6 @@ html
 				.pricing-clarify
 					p * Early Pack price is applicable for teams of 3 and more
 					p ** Prices do not include VAT (if applicable)				
-		include ../footer.jade
-		include ../ga.jade
-		include ../tawk.jade
+		include footer.jade
+		include ga.jade
+		include tawk.jade

@@ -18,9 +18,9 @@ html(itemscope itemtype="http://schema.org/Organization")
 		link(rel="shortcut icon" href="/favicon.ico")
 		link(rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
 		link(rel="stylesheet" href="/css/style.css")
-	body
 		script(src="/js/main.js")
-
+	body
+		include facebook.jade
 		header#header 
 			.container
 				.menu
@@ -86,7 +86,10 @@ html(itemscope itemtype="http://schema.org/Organization")
 							.description
 								| #{training.description} 
 								.actions
-									a.action(href="#{training.url}") More information
+									.more 
+										a.action(href="#{training.url}") More information
+									.social
+										.fb-like(data-href="http://devchampions.com/#{training.url}" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true")
 				p 
 					blockquote
 						strong Didn't find a training for you? 

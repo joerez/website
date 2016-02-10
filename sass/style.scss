@@ -136,7 +136,21 @@ header#header {
 }
 
 .actions {
+	@include outer-container;
 	margin-top: 20px;
+
+	.more {
+		@include column(6);
+	}
+
+	.social {
+		text-align: right;
+		@include column(6);
+		@include media($mobile) {
+			margin-top: 40px;
+			text-align: center;
+		}
+	}
 }
 
 footer {
