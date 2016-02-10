@@ -26,6 +26,7 @@
     "vinyl-buffer": "^1.0.0",
     "node-bourbon": "^4.2.3",
     "node-neat": "^1.7.1",
-    "lodash": "^4.0.0"
+    "lodash": "^4.0.0",
+    "moment": "^2.11.2"
     }
 }

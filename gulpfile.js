@@ -15,6 +15,7 @@ var gulp = require('gulp'),
 	util = require('gulp-util'),
 	data = require('gulp-data'),
 	jade = require('gulp-jade'),
+	moment = require('moment'),
 	glob = require('glob'),
 	path = require('path'),
 	_ = require('lodash');
@@ -84,6 +85,10 @@ gulp.task('jade', function() {
 						var json = require('./' + file); 
 						var parentDir = "training/" + path.dirname(file).split(path.sep)[2];
 						return _.extend({}, json, {url: parentDir});
+					})
+					.sortBy(function(json) { 
+						console.log(moment(json.date, 'DD MMMM YYYY').unix());
+						return moment(json.date, 'DD MMMM YYYY').unix()
 					})
 				.value();
 	}
