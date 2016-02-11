@@ -21,6 +21,8 @@
     "gulp-util": "^3.0.7",
     "gulp-connect": "^2.3.1",
     "gulp-jsoncombine": "^1.0.3",
+    "gulp-sequence": "^0.4.4",
+    "gulp-local-screenshots": "^2.2.0",
     "gulp-uglify": "^1.5.1",
     "gulp-concat": "^2.6.0",
     "vinyl-buffer": "^1.0.0",

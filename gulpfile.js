@@ -12,6 +12,8 @@ var gulp = require('gulp'),
 	deploy = require('gulp-gh-pages'),
 	combine = require('gulp-jsoncombine'),
 	spritesmith = require('gulp.spritesmith'),
+	screenshots = require('gulp-local-screenshots'),
+	sequence = require('gulp-sequence'),
 	util = require('gulp-util'),
 	data = require('gulp-data'),
 	jade = require('gulp-jade'),
@@ -33,8 +35,10 @@ gulp.task('connect', function() {
 });
 
 gulp.task('build', function() {
-	gulp.start('img', 'sass', 'jade', 'uglify', 'fonts', 'copy');
+	gulp.start('buildSequence');
 })
+
+gulp.task('buildSequence', sequence('img', 'sass', 'jade', 'uglify', 'fonts', 'copy'));
 
 gulp.task('img', function() {
 	
@@ -102,10 +106,10 @@ gulp.task('jade', function() {
 	    .pipe(gulp.dest(publicDir))
 	    .pipe(connect.reload());
 
-	gulp.src('./jade/**/*/index.jade')
+	gulp.src('./jade/**/*/{index,index_og}.jade')
 		.pipe(data(function(file_) {
 			var file = path.parse(file_.path)
-			return require(file.dir + "/" + file.name + ".json");
+			return require(file.dir + "/index.json");
 	    }))		
 	    .pipe(jade({
 	    	pretty: true
@@ -132,6 +136,18 @@ gulp.task('copy', function() {
 		.pipe(gulp.dest(publicDir))
 		.pipe(connect.reload());
 });
+
+// gulp.task('screens', function () {
+// 	return gulp.src(publicDir + '**/training/*/**.html')
+//   		.pipe(screenshots({
+// 	        path: publicDir + '/',
+// 	        folder: publicDir + '/img',
+// 	        type: 'png',
+// 	        suffix: 'shot',
+// 	        width: ['1300']
+//    		}))
+//   		.pipe(gulp.dest(publicDir + '/img'));
+// });
 
 
 gulp.task('watch', function() {
