@@ -95,6 +95,10 @@ header#header {
 }
 
 #offers {
+	.polyfill {
+		@include column(4, 12, 12)		
+	}
+
 	.offer {
 		padding: 25px;
 		margin-top: 25px;

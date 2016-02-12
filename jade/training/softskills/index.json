@@ -8,26 +8,19 @@
 	"audience": "Developers and teams willing to significantly improve their soft and organisational skills.",
 	"certification": "You earn a certificate of participation by attending the course. No exam required.",
 	"language": "The course is taught in English.",
-	"date": "20 May 2016",
-	"location": "Riga, Latvia",
+	"date": "",
+	"location": "2-day in-house training",
 	"badge": "",
 	"book": "https://devchampions.typeform.com/to/dKnKcZ",
 	"tags": [ ],
 	"offers": [
-		{
-			"name": "Early Bird",
-			"price": "199",
-			"due": "25 March 2016"
-		},
-		{
-			"name": "Wiseman",
-			"price": "249",
-			"due": "13 May 2016"
-		},
+		{},
 		{
 			"name": "In-house",
-			"price": "1499"
-		}		
+			"info": "Maximum number of participants - 12",
+			"price": "1999"
+		},
+		{}	
 	],
 	"trainer": {
 		"twitter": "eduardsi",			

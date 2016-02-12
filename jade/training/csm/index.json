@@ -15,19 +15,19 @@
 	"tags": ["agile processes"],
 	"offers": [
 		{
-			"name": "Early Pack",
+			"name": "Early Bird (3+ Pack)",
 			"price": "899",
-			"due": "13 March 2016"
+			"due": "Sale ends on 13 March 2016"
 		},
 		{
 			"name": "Early Bird",
 			"price": "999",
-			"due": "13 March 2016"
+			"info": "Sale ends on 13 March 2016"
 		},
 		{
 			"name": "Wiseman",
 			"price": "1199",
-			"due": "30 April 2016"
+			"info": "Sale ends on 30 April 2016"
 		}
 	],
 	"trainer": {

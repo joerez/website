@@ -80,7 +80,10 @@ html(itemscope itemtype="http://schema.org/Organization")
 							h2.title #{training.title}						
 							if training.badge
 								img(src='/img/' + training.badge + '.png' alt="Certificate")
-							h3 #{training.date}, #{training.location}
+							if training.date
+								h3 #{training.date}, #{training.location}
+							else 
+								h3 #{training.location}
 						section
 							.trainer
 								div(class='pic icon-' + training.trainer.pic)

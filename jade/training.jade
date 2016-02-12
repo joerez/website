@@ -36,7 +36,10 @@ html
 							if badge
 								img.badge(src='/img/' + badge + '.png' alt="Certificate")
 							strong  #{title}
-				h2 #{date}, #{location}
+				if date
+					h2 #{date}, #{location}
+				else
+					h2 #{location}
 		main
 			section#description
 				.container
@@ -77,19 +80,22 @@ html
 			section#offers
 				.container
 					each offer, no in offers
-						.offer
-							h2 #{offer.name}
-							if offer.due
-								h3 Sale ends on #{offer.due}
-							else
-								h3 &nbsp;								
-							.price
-								.child #{offer.price}€
-							.actions
-								a.action(href="#{book}") Book now
+						if offer.name
+							.offer
+								h2 #{offer.name}
+								if offer.info
+									h3 #{offer.info}
+								else
+									h3 &nbsp;								
+								.price
+									.child #{offer.price}€
+								.actions
+									a.action(href="#{book}") Book now
+						else
+							.polyfill &nbsp;
 				.pricing-clarify
-					p * Early Pack price is applicable for teams of 3 and more
-					p ** Prices do not include VAT (if applicable)				
+					p * Price does not include VAT (if applicable)				
+					p * Price does not include travelling and accommodation costs (if training is hosted outside of Riga)
 		include footer.jade
 		include ga.jade
 		include tawk.jade

@@ -16,19 +16,19 @@
 	"tags": ["engineering", "automation"],		
 	"offers": [
 		{
-			"name": "Early Pack",
+			"name": "Early Bird (3+ Pack)",
 			"price": "299",
-			"due": "27 March 2016"
+			"info": "Sale ends on 27 March 2016"
 		},
 		{
 			"name": "Early Bird",
 			"price": "399",
-			"due": "27 March 2016"
+			"info": "Sale ends on 27 March 2016"
 		},
 		{
 			"name": "Wiseman",
 			"price": "499",
-			"due": "18 September 2016"
+			"info": "Sale ends on 18 September 2016"
 		}
 	],
 	"trainer": {
