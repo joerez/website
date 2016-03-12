@@ -14,21 +14,13 @@
 	"book": "https://devchampions.typeform.com/to/QFcPaw",
 	"tags": ["agile processes"],
 	"offers": [
-		{
-			"name": "Early Bird (3+ Pack)",
-			"price": "899",
-			"due": "Sale ends on 13 March 2016"
-		},
-		{
-			"name": "Early Bird",
-			"price": "999",
-			"info": "Sale ends on 13 March 2016"
-		},
+		{},
 		{
 			"name": "Wiseman",
-			"price": "1199",
-			"info": "Sale ends on 30 April 2016"
-		}
+			"price": "1099",
+			"info": "Sale ends on 29 April 2016"
+		},
+		{}
 	],
 	"trainer": {
 		"twitter": "alexeykri",
