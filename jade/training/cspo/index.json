@@ -3,16 +3,16 @@
 	"subtitle": "Product Owner's Workout",
 	"ogImage": "cspo_og.png",
 	"keywords": "cspo training, cspo certification, product owner certification, scrum product owner training, product owner training",
-	"metaDescription": "Official two-day certification class designed specifically for Product Owners, Scrum Masters, Team Leads and Project Managers engaged in Agile product development.",
+	"metaDescription": "The official Scrum certification class in Riga, Latvia, designed for Team Leads, Product Owners and Project Managers working with Agile teams",
 	"description": "This is an official ScrumAlliance two-day intensive certification class designed specifically for Product Owners, Scrum Masters, Team Leads and Project Managers engaged in Agile product development. This Certified Scrum Product Owner is designed to integrate people with different level of Scrum exposure and experience. It not only teaches the core concepts. It lets you practice the Agile mindset through a variety of workshops, exercises, and discussions guided by the experienced trainer. ",
 	"audience": "The course is oriented towards people who will be taking over Product Owner role and is also suitable for business analysts, product managers, team leaders or Scrum Masters who want to deepen their understanding of Scrum product ownership.",
-	"certification": "You earn CSPO certificate by attending the course. No exam required.",	
-	"language": "The course is taught in English.",	
+	"certification": "You earn CSPO certificate by attending the course. No exam required.",
+	"language": "The course is taught in English.",
 	"date": "3-4 May 2016",
 	"location": "Riga, Latvia",
 	"badge": "cspo",
 	"book": "https://devchampions.typeform.com/to/pKRQIG",
-	"tags": ["agile processes"],		
+	"tags": ["agile processes"],
 	"offers": [
 		{
 			"name": "Early Bird (3+ Pack)",
@@ -31,7 +31,7 @@
 		}
 	],
 	"trainer": {
-		"twitter": "alexeykri",					
+		"twitter": "alexeykri",
 		"name": "Alexey Krivitsky",
 		"title": "Certified Scrum Trainer® with the ScrumAlliance",
 		"pic": "alexeykrivitsky"

@@ -1,10 +1,10 @@
 doctype html
 html
-	block vars	
+	block vars
 	head
 		meta(charset="utf-8")
 		meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1")
-		title #{title} - Training and Certification
+		title #{title} - Training and Certification classes
 		meta(name="description" content="#{metaDescription}")
 		meta(name="keywords" content="#{keywords}")
 
@@ -26,12 +26,12 @@ html
 	body
 		script(src="/js/main.js")
 		include facebook.jade
-		header#header 
+		header#header
 			.container
 				.menu
 					a(href="/") ← To training list
 				.logo
-					h1 
+					h1
 						a(href="#")
 							if badge
 								img.badge(src='/img/' + badge + '.png' alt="Certificate")
@@ -46,7 +46,7 @@ html
 					header
 						h1 Course description
 					article
-						block description				
+						block description
 						.shorties
 							section.shorty
 								i(class="fa roundy fa-group")
@@ -59,7 +59,7 @@ html
 							section.shorty
 								i(class="fa roundy fa-globe")
 								h2 Language
-								p #{language}		
+								p #{language}
 			section#trainer
 				.container
 					section.training
@@ -86,7 +86,7 @@ html
 								if offer.info
 									h3 #{offer.info}
 								else
-									h3 &nbsp;								
+									h3 &nbsp;
 								.price
 									.child #{offer.price}€
 								.actions
@@ -94,10 +94,10 @@ html
 						else
 							.polyfill &nbsp;
 				.pricing-clarify
-					p * Price does not include VAT (if applicable)				
+					p * Price does not include VAT (if applicable)
 					p * Price does not include travelling and accommodation costs (if training is hosted outside of Riga)
 		include footer.jade
 		include ga.jade
 		include sumome.jade
 		include tawk.jade
-		include twitter.jade		
+		include twitter.jade
