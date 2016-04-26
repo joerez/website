@@ -8,22 +8,30 @@
 	"audience": "Java professionals and teams willing to significantly improve their Java expertise, productivity and career opportunities.",
 	"certification": "You earn a certificate after completing a practical assignment that becomes part of your GitHub portfolio",
 	"language": "The course is taught in English.",
-	"date": "",
-	"location": "2-day in-house training",
+	"date": "14-15 September 2016",
+	"location": "Riga, Latvia",
 	"badge": "",
-	"book": "https://devchampions.typeform.com/to/tmxAsI",
+	"book": "https://devchampions.typeform.com/to/ULhC14",
 	"tags": [ ],
 	"offers": [
-		{},
+		{
+			"name": "Early Bird",
+			"price": "499",
+			"info": "until 24 June"
+		},
+		{
+			"name": "Wiseman",
+			"price": "599",
+			"info": "until 9 September"			
+		},
 		{
 			"name": "In-house",
 			"info": "12 people max",
 			"price": "2500"
-		},
-		{}
+		}
 	],
 	"trainer": {
-		"twitter": "eduardsi",			
+		"twitter": "eduardsi",
 		"name": "Eduards Sizovs",
 		"title": "Founder @ Latvian Software Craftsmanship Community",
 		"pic": "eduardsi"
