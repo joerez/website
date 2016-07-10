@@ -90,7 +90,7 @@ html
 								.price
 									.child #{offer.price}€
 								.actions
-									a.action(href="#{book}") Book now
+									a.action(href="#{offer.book ? offer.book : book}") Book now
 						else
 							.polyfill &nbsp;
 				.pricing-clarify

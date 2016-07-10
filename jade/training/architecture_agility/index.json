@@ -1,0 +1,34 @@
+{
+	"title": "Architecture with Agility",
+	"subtitle": "",
+	"ogImage": "",
+	"keywords": "agile architecture training, evolutionary architecture training",
+	"metaDescription": "Intensive, practical course on Agile architecture and its core techniques, patterns, and best practices",	
+	"description": "The goal of this intensive, practical course is to familiarize you with the concepts of Agile architecture and discover the relationship between Agile processes and good architecture, taking in development process models, architectural styles, requirements techniques, sufficient modelling techniques, design patterns and testing practices.",
+	"audience": "Developers, architects, technical leads, delivery leads",
+	"certification": "You earn a certificate of participation by attending the course. No exam required.",
+	"language": "The course is taught in English.",
+	"date": "2 December 2016",
+	"location": "Riga, Latvia",
+	"badge": "",
+	"book": "http://devternity.com",
+	"tags": [ ],
+	"offers": [
+		{
+			"name": "Early Bird",
+			"info": "valid until 30.08.2016",
+			"price": "249"
+		}, 
+		{
+			"name": "Regular",
+			"info": "",
+			"price": "299"
+		}
+	],
+	"trainer": {
+		"twitter": "kevlinhenney",			
+		"name": "Kevlin Henney",
+		"title": "Consultant, Trainer, Writer, Author of 97 Things Every Programmer Should Know",
+		"pic": "kevlin"
+	}
+}
