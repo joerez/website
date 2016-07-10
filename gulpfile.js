@@ -85,6 +85,9 @@ gulp.task('jade', function() {
 	var trainings = function() {
 		var files = glob.sync("jade/training/*/index.json");
 		return _.chain(files)
+					.filter(function(file) { 
+						return !_.includes(path.dirname(file), '__'); 
+					})
 					.map(function(file) { 
 						var json = require('./' + file); 
 						var parentDir = "training/" + path.dirname(file).split(path.sep)[2];
