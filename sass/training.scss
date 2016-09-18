@@ -28,7 +28,7 @@ header#header {
 	@include sexy-gradient;
 
 	article {
-		@include media($tablet) {	
+		@include media($tablet) {
 			text-align: center;
 		}
 	}
@@ -50,16 +50,16 @@ header#header {
 }
 
 .training {
-	.description { 
-		@include media($tablet) {	
+	.description {
+		@include media($tablet) {
 			text-align: center !important;
-		}			
-		a {		
+		}
+		a {
 			color: $light-blue;
 			&:hover {
 				color: $dark-blue;
-			}	
-		}	
+			}
+		}
 
 
 		.quote {
@@ -70,7 +70,7 @@ header#header {
 			margin-top: 2em;
 			text-align: right;
 		}
-	}	
+	}
 }
 
 .trainer {
@@ -94,9 +94,20 @@ header#header {
 	@include column(4, 12);
 }
 
+#testimonials {
+	.quote {
+	  blockquote {
+			text-align: right;
+			padding-bottom: 1em;
+			padding-top: 2em;
+			border-bottom: 1px solid #f6f6f6;
+		}
+	}
+}
+
 #offers {
 	.polyfill {
-		@include column(4, 12, 12)		
+		@include column(4, 12, 12)
 	}
 
 	.offer {
@@ -118,7 +129,7 @@ header#header {
 			padding-bottom: 10px;
 			margin: 10px;
 		}
-		
+
 		.price {
 			@include roundy(#FFF, #5E98BA, #5E98BA);
 			margin-bottom: 50px;

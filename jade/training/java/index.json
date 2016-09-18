@@ -6,9 +6,10 @@
 	"metaDescription": "Practical 2-day course that will teach you principles, practices and patterns for writing readable, maintainable and effective code in Java 8.",
 	"description": "Do you want to feel proud of your work? Write code that your colleagues will admire? Move fast without compromising quality? Build long-living software that is easy and fun to maintain? Get out of technical debt without big upfront time investment? Professionally articulate technical decisions to your team and management? Then this course is for you. During this intensive, practical and entertaining 2-day course you will learn principles, practices and patterns for writing readable, maintainable and effective code in Java 8.",
 	"audience": "Java professionals and teams willing to significantly improve their Java expertise, productivity and career opportunities.",
-	"certification": "You earn a certificate after completing a practical assignment that becomes part of your GitHub portfolio",
+	"certification": "After 2 days of intensive work, you earn a certificate of accomplishment.",
+	"exampleCertificate": "http://certs.devchampions.com/0N2C7ZR6XR/",
 	"language": "The course is taught in English.",
-	"date": "14-15 September 2016",
+	"date": "11-12 May 2017",
 	"location": "Riga, Latvia",
 	"badge": "",
 	"book": "https://devchampions.typeform.com/to/ULhC14",
@@ -17,12 +18,12 @@
 		{
 			"name": "Early Bird",
 			"price": "499",
-			"info": "until 24 June"
+			"info": "until 3 Feb"
 		},
 		{
 			"name": "Wiseman",
 			"price": "599",
-			"info": "until 9 September"			
+			"info": "until 5 May"
 		},
 		{
 			"name": "In-house",

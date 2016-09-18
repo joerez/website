@@ -56,10 +56,15 @@ html
 								i(class="fa roundy fa-certificate")
 								h2 Certification
 								p #{certification}
+								p
+									if exampleCertificate
+										a(href='#{exampleCertificate}' target='_blank')
+											| View example certificate
 							section.shorty
 								i(class="fa roundy fa-globe")
 								h2 Language
 								p #{language}
+			block testimonials
 			section#trainer
 				.container
 					section.training

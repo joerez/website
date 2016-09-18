@@ -10,9 +10,9 @@ blockquote The course is based on real-world project code, stories and examples
 
 blockquote The course is updated to support Java 8 and functional programming idioms
 
-blockquote The course will show many frameworks in action including Spring Cloud, Netflix OSS stack, Spock and others
+blockquote The course will show many frameworks in action including Spring Boot, Netflix OSS stack, Spock and others
 
-blockquote Attendees will receive practical homework assignment for skill polishing and certification purposes. Homework will be reviewed and supplemented by constructive feedback.
+blockquote Attendees will receive optional coding assignment for skill polishing. Homework will be reviewed and supplemented by constructive feedback.
 
 h2 Coverage
 
@@ -21,29 +21,26 @@ h3
 	| (clean code rationale, design entropy, busting "quality is expensive" myth, consequences of bad code)
 h3
 	strong Principles, rules, laws and dilemmas&nbsp;
-	| (use-reuse paradox, specific-generic dilemma, Law of Demeter, KISS, SOLID, POP, DRY, YAGNI, just-enough design)
+	| (use-reuse paradox, specific-generic dilemma, Law of Demeter, KISS, SOLID, DRY, YAGNI, just-enough design)
 h3
 	strong Clean coding practices
-h4 Effective Naming (intention-revealing naming, abbreviations, domain dictionary, plurals vs. singulars, taking scope into account)
+h4 Effective Naming (principle of least astonishment, command-query separation, eliminating getters and setters, side-effects)
 h4 Effective Conditionals (how and when to avoid branching, how to eliminate nested branching, making branching easy-to-read)
-h4 Effective Functions (nulls vs. optionals, choosing parameter number and ordering, step-down rule, communicating side-effects)
-h4 Effective Classes (object thinking, OO meets functional, abstraction, boundaries, forms of coupling, cohesion, pathology, aggregates, entities, value objects, specifications)
-h4 Effective Comments (when and how to avoid them)
+h4 Effective Functions (nulls vs. optionals, single level of abstraction, step-down rule, lambda or not to lambda?)
+h4 Effective Classes (OO meets functional, objects vs. data structures, abstraction, coupling, cohesion)
+h4 Effective Application Layer (commands, reactions, funnels)
+h4 Effective Domain modeling (DDD, protecting invariants, value objects, entities, aggregates, event bus, strong and eventual consistency)
+h4 Effective Comments (when and how to avoid, alternatives)
 h4 Effective Packaging (evil layering, anti-corruption, subdomains, bounded contexts, structure verification)
-h4 Effective Logging (treating logging as a dependency, event streams)
-h4 Effective Persistence (defining transaction management strategy, ORM or not to ORM, repositories, finders)
-h4 Effective Validation (simple and complex rule validation, client vs. server side, avoiding rule duplication)
+h4 Effective Persistence (transaction management strategy, ORM vs. noORM, DAO vs. repository, using Docker for testing)
+h4 Effective Validation (simple and complex rule validation, why Bean Validation sucks, writing custom validator)
 h4 Effective Exception Handling (when and how to handle exceptions, designing exception hierarchy, checked vs. unchecked)
 h4 Effective Modularity (modularity patterns, VeriPacks)
 h4 Effective Resilience (failure modes, responding to failures, stability patterns, Hystrix)
-h4 Effective Configuration (how to make an application Ops-friendly)
-h4 Effective Concurrency (STM and RxJava, testing concurrency)
+h4 Effective Concurrency (CompletableFuture, RxJava, testing concurrency and asynchrony)
 h3
 	strong How to deal with legacy code&nbsp;
-	| (big-bangs, boy scout rule, chia pet pattern, test seams, mikado method)
-h3
-	strong How to write testable code&nbsp;
-	| (taking responsibility over quality, reducing the feedback cycles, testing hot-dog, testing time, file system and 3rd party interactions)
+	| (big-bangs, boy scout rule, chia pet pattern, test seams)
 h3
 	strong How to stay clean and move fast&nbsp;
 	| (incremental refactoring, effective code reviews, pairing, CoPs, brown-bags, quality forecasting with Sonar)
