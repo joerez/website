@@ -1,11 +1,11 @@
 {
-	"title": "Soft Skills for Developers",
+	"title": "Leadership and Soft Skills for Developers",
 	"subtitle": "",
 	"ogImage": "softskills_og.png",
-	"keywords": "soft skills, how to become a software architect, how to become a team lead, becoming a technica leader",
-	"metaDescription": "Practical training for developers and teams interested in improving soft and organisational skills.",
+	"keywords": "soft skills, leadership for developers, how to become a software architect, how to become a team lead, becoming a technical leader",
+	"metaDescription": "Practical training for developers and teams interested in improving leadership and organisational skills.",
 	"description": "Soft skills are paramount to developer's success. Developers that speak customer language, clearly communicate intent, lead and inspire are extremely valuable asset for any customer-centric organisation. This training is designed to make you - developer, better communicator and leader, boost your negotiation and organisational skills.",
-	"audience": "Developers and teams willing to significantly improve their soft and organisational skills.",
+	"audience": "Developers and teams willing to significantly improve their leadership and soft skills.",
 	"certification": "You earn a certificate of participation by attending the course. No exam required.",
 	"language": "The course is taught in English.",
 	"date": "",
@@ -18,7 +18,7 @@
 		{
 			"name": "In-house",
 			"info": "Maximum number of participants - 12",
-			"price": "2800"
+			"price": "3200"
 		},
 		{}
 	],

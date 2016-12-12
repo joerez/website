@@ -3,9 +3,9 @@
 	"subtitle": "",
 	"ogImage": "continuousdelivery_og.png",
 	"keywords": "continuous delivery training, devops training, how to implement continuous delivery, implementing continuous delivery",
-	"metaDescription": "Intensive 2-day training on Continuous Delivery and how to implement it effectively, avoid common pitfalls, save money and time.",	
+	"metaDescription": "Intensive 2-day training on Continuous Delivery and how to implement it effectively, avoid common pitfalls, save money and time.",
 	"description": "The goal of this course is to help you implement Continuous Delivery in a pragmatic way. Based on experience accumulated in large and small organisations, the course will help you avoid common pitfalls teams and organisations face when adopting Continuous Delivery and equip you with enough knowledge so you can pursue your own journey.",
-	"audience": "Developers, architects, leaders and teams willing to expand their Continuous Delivery knowledge beyond basics",
+	"audience": "Developers, architects, technical and product leaders willing to expand their Continuous Delivery knowledge beyond basics",
 	"certification": "You earn a certificate of participation by attending the course. No exam required.",
 	"language": "The course is taught in English.",
 	"date": "",
@@ -18,12 +18,12 @@
 		{
 			"name": "In-house",
 			"info": "Maximum number of participants - 12",
-			"price": "2800"
+			"price": "3200"
 		},
-		{}	
+		{}
 	],
 	"trainer": {
-		"twitter": "eduardsi",			
+		"twitter": "eduardsi",
 		"name": "Eduards Sizovs",
 		"title": "Founder @ Latvian Software Craftsmanship Community",
 		"pic": "eduardsi"

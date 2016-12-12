@@ -3,36 +3,29 @@
 	"subtitle": "",
 	"ogImage": "",
 	"keywords": "aws training, aws classes, amazon web services training, amazon web services classes, devops training, devops classes",
-	"metaDescription": "Intensive practical class on building and maintaining production infrastructure on Amazon Web Services",	
+	"metaDescription": "Intensive practical class on building and maintaining production infrastructure on Amazon Web Services",
 	"description": "The goal of this intensive, practical course is to familiarise you with the core AWS services and equip you with enough knowledge so you can choose, create, configure and maintain AWS infrastructure for your own projects.",
 	"audience": "Developers, architects, ops and system administrators willing to expand their Amazon Web Services knowledge beyond basics",
 	"certification": "You earn a certificate of participation by attending the course. No exam required.",
 	"language": "The course is taught in English.",
-	"date": "2 December 2016",
-	"location": "Riga, Latvia",
+	"date": "",
+	"location": "2-day in-house training",
 	"badge": "",
 	"book": "http://devternity.com",
 	"tags": [ ],
 	"offers": [
 		{
-			"name": "Early Bird",
-			"info": "valid until 30.08.2016",
-			"price": "249"
-		}, 
-		{
-			"name": "Regular",
-			"info": "",
-			"price": "299"
 		},
 		{
 			"name": "In-house",
 			"info": "duration - 2 days",
 			"price": "3200",
-			"book": "mailto:hello@devchampions.com?subject=AWS in-house class"		
-		}	
+			"book": "mailto:hello@devchampions.com?subject=AWS in-house class"
+		},
+		{}
 	],
 	"trainer": {
-		"twitter": "jurispv",			
+		"twitter": "jurispv",
 		"name": "Juris Pavlyuchenkov",
 		"title": "AWS Certified Solutions Architect",
 		"pic": "pavl"
