@@ -1,0 +1,40 @@
+{
+	"title": "JVM Internals and Performance Tuning",
+	"subtitle": "JVM Internals and Performance Tuning",
+	"ogImage": "jvm_og.png",
+	"keywords": "java performance, java certification, java training, jvm training",
+	"metaDescription": "Practical training for developers and teams interested in improving their JVM knowledge.",
+	"description": "This 2-day training dives deep into the JVM internals and tool set offered by JVM's eco-system. It also describes possible scenarios that may arise during production system support. Understanding of JVM internal architecture may help developers to write code that is more efficient; performance analysis and tuning of JVM parameters may help operations team to quicker find and report problems.",
+	"audience": "The training is aimed at Java developers with several years of experience who look into deepening their JVM knowledge as well as for system administrators looking into improving their JVM performance tuning skills.",
+	"certification": "You earn a certificate of participation by attending the course. No exam required.",
+	"language": "The course is taught in English.",
+	"date": "18-19 May 2017",
+	"location": "Riga, Latvia",
+	"twitter": "codingandrey",
+	"badge": "",
+	"book": "https://devchampions.typeform.com/to/mMEykq",
+	"tags": ["jvm", "performance", "internals"],
+	"offers": [
+		{
+			"name": "Early Bird",
+			"price": "499",
+			"info": "until 15 Mar, 2017"
+		},
+		{
+			"name": "Wiseman",
+			"price": "599",
+			"info": "until 10 May, 2017"
+		},
+		{
+			"name": "In-house",
+			"info": "15 people max",
+			"price": "3500"
+		}
+	],
+	"trainer": {
+		"twitter": "codingandrey",
+		"name": "Andrey Adamovich",
+		"title": "Java Expert",
+		"pic": "andreyadamovich"
+	}
+}
