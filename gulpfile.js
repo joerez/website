@@ -81,7 +81,6 @@ gulp.task('sass', function () {
 
 gulp.task('jade', function() {
 
-
 	var trainings = function() {
 		var files = glob.sync("jade/training/*/index.json");
 		return _.chain(files)
@@ -99,7 +98,14 @@ gulp.task('jade', function() {
 				.value();
 	}
 
-	gulp.src('./jade/index.jade')		
+	gulp.src('./jade/cancel.jade')
+	    .pipe(jade({
+	    	pretty: true
+	    }))
+	    .pipe(gulp.dest(publicDir))
+	    .pipe(connect.reload());
+
+	gulp.src('./jade/index.jade')
 	    .pipe(jade({
 	    	locals: {
 	    		"trainings": trainings()
