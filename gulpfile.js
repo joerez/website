@@ -90,7 +90,7 @@ gulp.task('jade', function() {
 					})
 					.map(function(file) { 
 						var json = require('./' + file); 
-						var parentDir = "training/" + path.dirname(file).split(path.sep)[2];
+						var parentDir = "training/" + path.dirname(file).split("/")[2];
 						return _.extend({}, json, {url: parentDir});
 					})
 					.sortBy(function(json) { 
