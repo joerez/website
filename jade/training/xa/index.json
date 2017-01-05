@@ -16,22 +16,25 @@
 	"tags": ["engineering", "automation", "devops"],
 	"offers": [
 		{
-		},
-		{
 			"name": "Early Bird",
-			"price": "399",
-			"info": "Sale ends on 28 February 2017"
+			"price": "499",
+			"info": "until 28 Feb, 2017"
 		},
 		{
 			"name": "Wiseman",
-			"price": "499",
-			"info": "Sale ends on 2 May 2017"
+			"price": "599",
+			"info": "until 2 May, 2017"
+		},
+		{
+			"name": "In-house",
+			"info": "15 people max",
+			"price": "3500"
 		}
 	],
 	"trainer": {
 		"twitter": "codingandrey",
 		"name": "Andrey Adamovich",
-		"title": "Author of 'Groovy 2 Cookbook'",
+		"title": "Extreme Automator",
 		"pic": "andreyadamovich"
 	}
 }
