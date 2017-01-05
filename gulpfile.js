@@ -165,7 +165,7 @@ gulp.task('default', ['connect', 'build', 'watch']);
 
 gulp.task('deploy', function () {
     var options = {
-    	remoteUrl: "git@github.com:eduardsi/devchampions.git",
+    	remoteUrl: "git@github.com:devchampions/website.git",
     	branch: "gh-pages"
     }
 
