@@ -8,24 +8,24 @@
 	"audience": "Developers, software architects, technical project managers, system administrators.",
 	"certification": "You earn eXtreme Automation certificate by attending the course. No exam required.",
 	"language": "The course is taught in English.",
-	"date": "8-9 September 2016",
+	"date": "4-5 May 2017",
 	"location": "Riga, Latvia",
 	"twitter": "codingandrey",
 	"badge": "",
 	"book": "https://devchampions.typeform.com/to/qzzf3c",
-	"tags": ["engineering", "automation"],
+	"tags": ["engineering", "automation", "devops"],
 	"offers": [
 		{
 		},
 		{
 			"name": "Early Bird",
 			"price": "399",
-			"info": "Sale ends on 31 May 2016"
+			"info": "Sale ends on 28 February 2017"
 		},
 		{
 			"name": "Wiseman",
 			"price": "499",
-			"info": "Sale ends on 7 September 2016"
+			"info": "Sale ends on 2 May 2017"
 		}
 	],
 	"trainer": {
