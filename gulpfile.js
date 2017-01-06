@@ -5,7 +5,7 @@ var gulp = require('gulp'),
 	autoprefix = require('gulp-autoprefixer'),
 	neat = require('node-neat'),
 	gulpif = require('gulp-if'),
-	resize = require('gulp-image-resize'),	
+	resize = require('gulp-image-resize'),
 	concat = require('gulp-concat'),
 	uglify = require('gulp-uglify'),
 	buffer = require('vinyl-buffer'),
@@ -41,7 +41,7 @@ gulp.task('build', function() {
 gulp.task('buildSequence', sequence('img', 'sass', 'jade', 'uglify', 'fonts', 'copy'));
 
 gulp.task('img', function() {
-	
+
 	var sprites = gulp.src('img/trainers/*.png')
 		.pipe(spritesmith({
 			imgName: 'trainers.png',
@@ -57,16 +57,16 @@ gulp.task('img', function() {
 			height : 100,
 			crop : true,
 			upscale : true
-		})))		
+		})))
 		.pipe(imagemin())
-    	.pipe(gulp.dest(publicDir + '/img'));	
+    	.pipe(gulp.dest(publicDir + '/img'));
 
     sprites.css
     	.pipe(gulp.dest(publicDir + '/css'));
 
 	gulp.src('img/*.{png,jpg,svg}')
 		.pipe(imagemin())
-		.pipe(gulp.dest(publicDir + '/img'));	
+		.pipe(gulp.dest(publicDir + '/img'));
 })
 
 gulp.task('sass', function () {
@@ -84,15 +84,15 @@ gulp.task('jade', function() {
 	var trainings = function() {
 		var files = glob.sync("jade/training/*/index.json");
 		return _.chain(files)
-					.filter(function(file) { 
-						return !_.includes(path.dirname(file), '__'); 
+					.filter(function(file) {
+						return !_.includes(path.dirname(file), '__');
 					})
-					.map(function(file) { 
-						var json = require('./' + file); 
+					.map(function(file) {
+						var json = require('./' + file);
 						var parentDir = "training/" + path.dirname(file).split("/")[2];
 						return _.extend({}, json, {url: parentDir});
 					})
-					.sortBy(function(json) { 
+					.sortBy(function(json) {
 						return moment(json.date, 'DD MMMM YYYY').unix()
 					})
 				.value();
@@ -119,7 +119,7 @@ gulp.task('jade', function() {
 		.pipe(data(function(file_) {
 			var file = path.parse(file_.path)
 			return require(file.dir + "/index.json");
-	    }))		
+	    }))
 	    .pipe(jade({
 	    	pretty: true
 	    }))
@@ -171,7 +171,7 @@ gulp.task('default', ['connect', 'build', 'watch']);
 
 gulp.task('deploy', function () {
     var options = {
-    	remoteUrl: "https://github.com/devchampions/website.git",
+    	remoteUrl: "git@github.com:devchampions/website.git",
     	branch: "gh-pages"
     }
 
