@@ -1,0 +1,34 @@
+{
+	"title": "Building Cloud Native microservices with Spring Cloud & Netflix OSS",
+	"subtitle": "",
+	"ogImage": "",
+	"keywords": "spring cloud training, netflix oss trainign, spring boot training, microservices training",
+	"metaDescription": "Intensive, practical class on building and maintaining production-ready Microservices with Spring Cloud and Netflix OSS stack.",
+	"description": "The goal of this intensive, practical course is to familiarize you with Spring Cloud and Netflix OSS stack in the context of building production-ready microservices.",
+	"audience": "Java developers, architects, technical leads",
+	"certification": "You earn a certificate of participation by attending the course. No exam required.",
+	"language": "The course is taught in English.",
+	"date": "",
+	"location": "2-day in-house training",
+	"badge": "",
+	"book": "http://devternity.com",
+	"tags": [ ],
+	"offers": [
+		{
+		},
+		{
+			"name": "In-house",
+			"info": "duration - 2 days",
+			"price": "3200",
+			"book": "mailto:hello@devchampions.com?subject=SpringCloud In-house"
+		},
+		{
+		}
+	],
+	"trainer": {
+		"twitter": "marcingrzejszczak",
+		"name": "Marcin Grzejszczak",
+		"title": "Senior Software Developer @ Pivotal, Member of Spring-Cloud team, Author of Mockito books",
+		"pic": "marcin"
+	}
+}
