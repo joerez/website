@@ -4,7 +4,7 @@
    "ogImage":"",
    "keywords":"unit testing, integration testing, BDD, TDD, .NET, .NET Core",
    "metaDescription":"Intensive practical class on mastering unint and integration testing in .NET world",
-   "description":"The goal of this intensive workshop is to familiarise you with practical testing techniques and equip you with enough knowledge so you can apply them immediately and improve your delivery pipeline.",
+   "description":"How can you respect your work if it is not covered with a proper set of tests? Pretend that the problem does not exist or start your journey to becoming a champion? If your choice is the second option devchampions is here to help you. The goal of this intensive workshop is to familiarise you with practical testing techniques and equip you with enough knowledge so you can apply them immediately and improve your delivery pipeline.",
    "audience":"Developers, architects, devops  willing to expand their testing knowledge beyond basics",
    "certification":"You earn a certificate of participation by attending the course. No exam required.",
    "language":"The course is taught in English.",
@@ -32,7 +32,7 @@
    "trainer":{  
       "twitter":"ArturKarbone",
       "name":"Artur Karbone",
-      "title":"Lone wolf consultant, .NET Expert",
+      "title":"An independent consultant, .NET Expert, OSS contributor, blogger", 
       "pic":"arturkarbone"
    }
 }
