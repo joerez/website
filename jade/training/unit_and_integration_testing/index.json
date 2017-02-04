@@ -1,0 +1,38 @@
+{  
+   "title":"Master Unit and Integration Testing in .NET World",
+   "subtitle":"",
+   "ogImage":"",
+   "keywords":"unit testing, integration testing, BDD, TDD, .NET, .NET Core",
+   "metaDescription":"Intensive practical class on mastering unint and integration testing in .NET world",
+   "description":"How can you trust your code if it is not covered with a proper set of tests? Effective testing requires much more than knowing a framework or two. The goal of this intensive workshop is to familiarize you with practical testing techniques and modern toolset for writing reliable code guided by tests for fast and continuous delivery.",
+   "audience":"Developers, architects, devops  willing to expand their testing knowledge beyond basics",
+   "certification":"You earn a certificate of participation by attending the course. No exam required.",
+   "language":"The course is taught in English.",
+   "date":"",
+   "location":"2-day in-house training",
+   "badge":"",
+   "book":"http://devternity.com",
+   "tags":[  
+
+   ],
+   "offers":[  
+      {  
+
+      },
+      {  
+         "name":"In-house",
+         "info":"duration - 2 days",
+         "price":"3200",
+         "book":"https://devchampions.typeform.com/to/N5vsqJ"
+      },
+      {  
+
+      }
+   ],
+   "trainer":{  
+      "twitter":"ArturKarbone",
+      "name":"Artur Karbone",
+      "title":"An independent consultant, .NET Expert, OSS contributor, blogger", 
+      "pic":"arturkarbone"
+   }
+}
