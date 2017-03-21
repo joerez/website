@@ -8,23 +8,12 @@
 	"audience": "The training is aimed at Java developers with several years of experience who look into deepening their JVM knowledge as well as for system administrators looking into improving their JVM performance tuning skills.",
 	"certification": "You earn a certificate of participation by attending the course. No exam required.",
 	"language": "The course is taught in English.",
-	"date": "18-19 May 2017",
 	"location": "Riga, Latvia",
 	"twitter": "codingandrey",
 	"badge": "",
 	"book": "https://devchampions.typeform.com/to/mMEykq",
 	"tags": ["jvm", "performance", "internals"],
 	"offers": [
-		{
-			"name": "Early Bird",
-			"price": "499",
-			"info": "until 15 Mar, 2017"
-		},
-		{
-			"name": "Wiseman",
-			"price": "599",
-			"info": "until 10 May, 2017"
-		},
 		{
 			"name": "In-house",
 			"info": "15 people max",
