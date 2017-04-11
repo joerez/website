@@ -1,6 +1,6 @@
 {
-	"title": "Specification By Example",
-	"subtitle": "Specification By Example",
+	"title": "Specification By Example in Action",
+	"subtitle": "Specification By Example in Action",
 	"ogImage": "xa_og.png",
 	"keywords": "specification by example, bdd, atdd",
 	"metaDescription": "This workshop offers a comprehensive, hands-on introduction to specification by example, with practical exercises, work in groups and lot of fun. ",
@@ -15,11 +15,20 @@
 	"book": "",
 	"tags": ["development", "specification", "quality"],
 	"offers": [
+		{
+		},
+		{
+			"name": "In-house",
+			"info": "duration - 2 days",
+			"price": "3200",
+			"book": "mailto:hello@devchampions.com?subject=Specification by example in Action in-house class"
+		},
+		{}
 	],
 	"trainer": {
 		"twitter": "andreygrave",
 		"name": "Andrey Grave",
-		"title": "",
+		"title": "An independent consultant",
 		"pic": "andreygrave"
 	}
 }
