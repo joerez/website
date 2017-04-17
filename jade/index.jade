@@ -23,12 +23,12 @@ html(itemscope itemtype="http://schema.org/Organization")
 
 		//- favicon
 		link(rel="shortcut icon" href="/favicon.ico")
-		link(rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
 		link(rel="stylesheet" href="/css/style.css")
 		script(src="/js/main.js")
 	body
 		include facebook.jade
-		header#header 
+		header#header
 			.container
 				.menu
 					a(href="#about") About
@@ -41,13 +41,13 @@ html(itemscope itemtype="http://schema.org/Organization")
 					a(href="https://linkedin.com/company/devchampions")
 						i(class="fa fa-linkedin")
 				.logo
-					h1 
+					h1
 						a(href="/")
 							img.achivement(src="/img/devchampion.png" alt="achivement")
 							strong dev
 							| champions
 				h2 Relevant training courses for you and your tech peers directly from industry influencers.
-				input#champion(type="button" value="Become a champion") 
+				input#champion(type="button" value="Become a champion")
 
 		.about#about
 			.container
@@ -57,9 +57,9 @@ html(itemscope itemtype="http://schema.org/Organization")
 					section.practitioners
 						i(class="fa roundy fa-diamond")
 						h2 The best trainers
-						p DevChampions center is led by industry practioners (we founded 
-							a(href="http://latcraft.lv") Latvian Software Craftsmanship Community 
-							| and 
+						p DevChampions center is led by industry practioners (we founded
+							a(href="http://latcraft.lv") Latvian Software Craftsmanship Community
+							| and
 							a(href="http://devternity.com") DevTernity Conference
 							| ). That lets us choose only the best trainers - we know those who deliver excellent training courses in person.
 					section.exclusive
@@ -77,12 +77,12 @@ html(itemscope itemtype="http://schema.org/Organization")
 				each training in trainings
 					section.training
 						header
-							h2.title #{training.title}						
+							h2.title #{training.title}
 							if training.badge
 								img(src='/img/' + training.badge + '.png' alt="Certificate")
 							if training.date
 								h3 #{training.date}, #{training.location}
-							else 
+							else
 								h3 #{training.location}
 						section
 							.trainer
@@ -94,21 +94,21 @@ html(itemscope itemtype="http://schema.org/Organization")
 									br
 									| #{training.trainer.title}
 							.description
-								| #{training.description} 
+								| #{training.description}
 								.actions
-									.more 
+									.more
 										a.action(href="#{training.url}") More information
 									.social
 										.fb-like(data-href="http://devchampions.com/#{training.url}" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true")
-				p 
-					blockquote
-						strong Didn't find a training for you? 
-						| No problem, 
-						a.darken(href="#contacts") let us know
-						|  what topic you are interested in and we will handle all organisational aspects including finding the best trainer, price negotiation and logistics. Please let us know if you prefer in-house training.				
 				p
 					blockquote
-						| Never miss a training by 
+						strong Didn't find a training for you?
+						| No problem,
+						a.darken(href="#contacts") let us know
+						|  what topic you are interested in and we will handle all organisational aspects including finding the best trainer, price negotiation and logistics. Please let us know if you prefer in-house training.
+				p
+					blockquote
+						| Never miss a training by
 						a.darken(href="http://devchampions.us12.list-manage1.com/subscribe?u=116ead2ab26f64dec3cbc60b5&id=c62c07ab37") subscribing
 						|  to our mailing list. We will keep you posted only on major happenings and announcements.
 		include footer.jade

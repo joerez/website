@@ -1,7 +1,7 @@
 {
 	"title": "Specification By Example in Action",
 	"subtitle": "Specification By Example in Action",
-	"ogImage": "xa_og.png",
+	"ogImage": "index_og.png",
 	"keywords": "specification by example, bdd, atdd",
 	"metaDescription": "This workshop offers a comprehensive, hands-on introduction to specification by example, with practical exercises, work in groups and lot of fun. ",
 	"description": "This workshop offers a comprehensive, hands-on introduction to specification by example, with practical exercises, work in groups and lot of fun. It will teach You how to apply specification by example to communicate more effectively. How to leverage examples to guide conversations, drive development and to create a single source of truth for testing and development.",
