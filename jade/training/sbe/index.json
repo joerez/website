@@ -1,0 +1,34 @@
+{
+	"title": "Specification By Example in Action",
+	"subtitle": "Specification By Example in Action",
+	"ogImage": "xa_og.png",
+	"keywords": "specification by example, bdd, atdd",
+	"metaDescription": "This workshop offers a comprehensive, hands-on introduction to specification by example, with practical exercises, work in groups and lot of fun. ",
+	"description": "This workshop offers a comprehensive, hands-on introduction to specification by example, with practical exercises, work in groups and lot of fun. It will teach You how to apply specification by example to communicate more effectively. How to leverage examples to guide conversations, drive development and to create a single source of truth for testing and development.",
+	"audience": "Developers, software architects, QA engineers, business analysts, project managers.",
+	"certification": "You earn certificate by attending the course. No exam required.",
+	"language": "The course is taught in English.",
+	"date": "",
+	"location": "2-day training",
+	"twitter": "",
+	"badge": "",
+	"book": "",
+	"tags": ["development", "specification", "quality"],
+	"offers": [
+		{
+		},
+		{
+			"name": "In-house",
+			"info": "duration - 2 days",
+			"price": "3200",
+			"book": "mailto:hello@devchampions.com?subject=Specification by example in Action in-house class"
+		},
+		{}
+	],
+	"trainer": {
+		"twitter": "andreygrave",
+		"name": "Andrey Grave",
+		"title": "An independent consultant",
+		"pic": "andreygrave"
+	}
+}
