@@ -4,15 +4,15 @@ node_js:
 - 5.0.0
 before_script:
 - npm install -g gulp
+- npm install
 script: 
 - gulp build
 before_deploy: 
 - git config --global user.email publish@travis.github 
-- git config --global user.name "Travis"
+- git config --global user.name "Travis (DevChampions)"
 deploy:
-  - edge: true
-    skip_cleanup: true
-    provider: script
-    script: gulp deploy
-    on:
-      branch: master
+  provider: script
+  skip_cleanup: true
+  script: gulp deploy
+  on:
+    branch: master
