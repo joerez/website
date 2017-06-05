@@ -3,7 +3,7 @@
 	"subtitle": "",
 	"ogImage": "",
 	"keywords": "agile architecture training, evolutionary architecture training",
-	"metaDescription": "Intensive, practical course on Agile architecture and its core techniques, patterns, and best practices",	
+	"metaDescription": "Intensive, practical course on Agile architecture and its core techniques, patterns, and best practices",
 	"description": "The goal of this intensive, practical course is to familiarize you with the concepts of Agile architecture and discover the relationship between Agile processes and good architecture, taking in development process models, architectural styles, requirements techniques, sufficient modelling techniques, design patterns and testing practices.",
 	"audience": "Developers, architects, technical leads, delivery leads",
 	"certification": "You earn a certificate of participation by attending the course. No exam required.",
@@ -15,18 +15,23 @@
 	"tags": [ ],
 	"offers": [
 		{
-			"name": "Early Bird",
-			"info": "valid until 30.08.2016",
-			"price": "249"
-		}, 
-		{
 			"name": "Regular",
 			"info": "",
-			"price": "299"
+			"price": "300"
+		},
+		{
+			"name": "Early Combo (with DevTernity 2017 ticket)",
+			"info": "valid until 01.09.2017",
+			"price": "450"
+		},
+		{
+			"name": "Combo (with DevTernity 2017 ticket)",
+			"info": "valid until 15.11.2017",
+			"price": "500"
 		}
 	],
 	"trainer": {
-		"twitter": "kevlinhenney",			
+		"twitter": "kevlinhenney",
 		"name": "Kevlin Henney",
 		"title": "Consultant, Trainer, Writer, Author of 97 Things Every Programmer Should Know",
 		"pic": "kevlin"

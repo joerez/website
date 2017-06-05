@@ -9,25 +9,25 @@
 	"certification": "After 2 days of intensive work, you earn a certificate of accomplishment.",
 	"exampleCertificate": "http://certs.devchampions.com/0N2C7ZR6XR/",
 	"language": "The course is taught in English.",
-	"date": "8-9 May 2017",
-	"location": "Riga, Latvia",
+	"date": "5-6 October 2017",
+	"location": "Munich, Germany",
 	"badge": "",
 	"book": "https://devchampions.typeform.com/to/ULhC14",
 	"tags": [ ],
 	"offers": [
 		{
 			"name": "Early Bird",
-			"price": "499",
-			"info": "until 3 Feb"
+			"price": "899",
+			"info": "until 30 Aug, 2017"
 		},
 		{
 			"name": "Wiseman",
-			"price": "599",
-			"info": "until 5 May"
+			"price": "1199",
+			"info": "until 29 Sep, 2017"
 		},
 		{
 			"name": "In-house",
-			"info": "12 people max",
+			"info": "15 people max",
 			"price": "3200"
 		}
 	],
