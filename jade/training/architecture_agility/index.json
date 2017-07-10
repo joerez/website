@@ -8,26 +8,16 @@
 	"audience": "Developers, architects, technical leads, delivery leads",
 	"certification": "You earn a certificate of participation by attending the course. No exam required.",
 	"language": "The course is taught in English.",
-	"date": "2 December 2016",
 	"location": "Riga, Latvia",
 	"badge": "",
 	"book": "http://devternity.com",
 	"tags": [ ],
 	"offers": [
 		{
-			"name": "Regular",
-			"info": "",
-			"price": "300"
 		},
 		{
-			"name": "Early Combo (with DevTernity 2017 ticket)",
-			"info": "valid until 01.09.2017",
-			"price": "450"
 		},
 		{
-			"name": "Combo (with DevTernity 2017 ticket)",
-			"info": "valid until 15.11.2017",
-			"price": "500"
 		}
 	],
 	"trainer": {
