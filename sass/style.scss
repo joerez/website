@@ -2,7 +2,7 @@
 @import "trainers.css";
 
 header#header {
-	@include header()
+	@include header();
 	.logo {
 		.achivement {
 			position: relative;

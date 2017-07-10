@@ -74,7 +74,9 @@
 }
 
 @mixin footer {
-  @include outer-container;
+
+  @include outer-container(100%);
+
   color: $base-dark-font-color;
   background-color: $dark-blue;
 
@@ -96,4 +98,5 @@
     text-align: right;
     margin-bottom: 80px;
   }
+
 }
