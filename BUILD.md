@@ -1,4 +1,14 @@
 
+#### Install [node](https://nodejs.org) 
+
+On MacOS run:
+
+> brew install node
+
+On Windows run:
+
+> choco install nodejs --version 6.9.4 -y --allow-downgrade --force
+
 #### Install [Yarn](https://yarnpkg.com) dependency manager
 
 On MacOS run:
@@ -7,7 +17,7 @@ On MacOS run:
 
 On Windows run:
 
-> choco install yarn
+> choco install yarn -y --force
 
 #### Install [Gulp](http://gulpjs.com/) build tool
 
@@ -23,5 +33,5 @@ On Windows additionally run (as Administrator):
 
 #### Run [Gulp](http://gulpjs.com/) build
 
-> gulp
+> gulp build
 
