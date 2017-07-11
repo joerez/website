@@ -2942,7 +2942,7 @@ node-bitmap@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/node-bitmap/-/node-bitmap-0.0.1.tgz#180eac7003e0c707618ef31368f62f84b2a69091"
 
-node-bourbon@^4.2.3:
+node-bourbon@^4.2.3, node-bourbon@^4.2.8:
   version "4.2.8"
   resolved "https://registry.yarnpkg.com/node-bourbon/-/node-bourbon-4.2.8.tgz#e444f1f09434ab7650ea318c28e2e103d3f942cd"
   dependencies:

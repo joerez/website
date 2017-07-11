@@ -2,149 +2,149 @@
 @import "trainers.css";
 
 header#header {
-	@include header();
+  @include header();
 }
 
 .container {
-	@include outer-container;
-	padding: 50px;
-    h1 {
-    	text-align: center;
-    }
+  @include outer-container;
+  padding: 50px;
+  h1 {
+    text-align: center;
+  }
 }
 
-
-
 .logo {
-	margin-top: 50px;
-	img {
-		position: relative;
-		top: 20px;
-	}
+  margin-top: 50px;
+  img {
+    position: relative;
+    top: 20px;
+  }
 }
 
 #description {
-	color: white;
-	@include sexy-gradient;
+  color: white;
+  @include sexy-gradient;
 
-	article {
-		@include media($tablet) {
-			text-align: center;
-		}
-	}
+  article {
+    @include media($tablet) {
+      text-align: center;
+    }
+  }
 
-	strong {
-		font-weight: bold;
-	}
+  strong {
+    font-weight: bold;
+  }
 
-	h2 {
-		margin-top: 1.5em;
-	}
-	h3 strong {
-		font-weight: bold;
-	}
+  h2 {
+    margin-top: 1.5em;
+  }
+  h3 strong {
+    font-weight: bold;
+  }
 
-	h4 {
-		margin-left: 1em;
-	}
+  h4 {
+    margin-left: 1em;
+  }
 }
 
 .training {
-	.description {
-		@include media($tablet) {
-			text-align: center !important;
-		}
-		a {
-			color: $light-blue;
-			&:hover {
-				color: $dark-blue;
-			}
-		}
+  .description {
 
+    @include media($tablet) {
+      text-align: center !important;
+    }
 
-		.quote {
-			hr {
-				border-color: #5E98BA;
-			}
-			font-style: italic;
-			margin-top: 2em;
-			text-align: right;
-		}
-	}
+    a {
+      color: $light-blue;
+      &:hover {
+        color: $dark-blue;
+      }
+    }
+
+    .quote {
+      hr {
+        border-color: #5E98BA;
+      }
+      font-style: italic;
+      margin-top: 2em;
+      text-align: right;
+    }
+
+  }
 }
 
 .trainer {
-	text-align: center;
-	margin-bottom: 50px;
-	.pic {
-		@include circle();
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 25px;
-	}
+  text-align: center;
+  margin-bottom: 50px;
+  .pic {
+    @include circle();
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+  }
 }
 
 .shorties {
-	@include outer-container;
+  @include outer-container;
 }
 
 .shorty {
-	text-align: center;
-	margin-top: 70px;
-	@include column(4, 12);
+  text-align: center;
+  margin-top: 70px;
+  @include column(4, 12);
 }
 
 #testimonials {
-	.quote {
-	  blockquote {
-			text-align: right;
-			padding-bottom: 1em;
-			padding-top: 2em;
-			border-bottom: 1px solid #f6f6f6;
-		}
-	}
+  .quote {
+    blockquote {
+      text-align: right;
+      padding-bottom: 1em;
+      padding-top: 2em;
+      border-bottom: 1px solid #f6f6f6;
+    }
+  }
 }
 
 #offers {
-	.polyfill {
-		@include column(4, 12, 12)
-	}
+  .polyfill {
+    @include column(4, 12, 12)
+  }
 
-	.offer {
-		padding: 25px;
-		margin-top: 25px;
-		margin-bottom: 25px;
-		text-align: center;
-		@include column(4, 12, 12)
-		@include border-width(2px);
-		@include border-style(solid);
-		@include border-color(#5E98BA);
-		@include border-top-radius(20px);
-		@include border-right-radius(20px);
-		@include border-bottom-radius(20px);
-		@include border-left-radius(20px);
+  .offer {
+    padding: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    @include column(4, 12, 12)
+    @include border-width(2px);
+    @include border-style(solid);
+    @include border-color(#5E98BA);
+    @include border-top-radius(20px);
+    @include border-right-radius(20px);
+    @include border-bottom-radius(20px);
+    @include border-left-radius(20px);
 
-		h2 {
-			border-bottom: 1px dashed #5E98BA;
-			padding-bottom: 10px;
-			margin: 10px;
-		}
+    h2 {
+      border-bottom: 1px dashed #5E98BA;
+      padding-bottom: 10px;
+      margin: 10px;
+    }
 
-		.price {
-			@include roundy(#FFF, #5E98BA, #5E98BA);
-			margin-bottom: 50px;
-		}
-	}
+    .price {
+      @include roundy(#FFF, #5E98BA, #5E98BA);
+      margin-bottom: 50px;
+    }
+  }
 }
 
 .pricing-clarify {
-	font-size: 0.8em;
-	text-align: right;
-	p {
-		margin: 0.8em;
-	}
+  font-size: 0.8em;
+  text-align: right;
+  p {
+    margin: 0.8em;
+  }
 }
 
 footer {
-	@include footer;
+  @include footer;
 }

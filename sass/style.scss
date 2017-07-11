@@ -1,158 +1,173 @@
+
 @import "bitters/base";
 @import "trainers.css";
 
 header#header {
-	@include header();
-	.logo {
-		.achivement {
-			position: relative;
-			top: 30px;
-	  		@include media($mobile) {
-	  			top: 20px;
-	  			width: 80px;
-			}					
-		}
-	}
 
-	input {
-		margin-top: 30px;
-	}
+  @include header();
+
+  .logo {
+    .achivement {
+      position: relative;
+      top: 30px;
+      @include media($mobile) {
+        top: 20px;
+        width: 80px;
+      }
+    }
+  }
+
+  input {
+    margin-top: 30px;
+  }
+
 }
 
-
 .menu {
-	margin-bottom: 50px;
-	a {
-		margin-right: 30px;
-	}
+  margin-bottom: 50px;
+  a {
+    margin-right: 30px;
+  }
 }
 
 .about {
-		text-align: center;
-		color: $base-dark-font-color;
-		@include sexy-gradient();
-	    .why {
-			@include outer-container;
-		  	.practitioners {
-		  		margin-top: 80px;
-		  		@include column;  		
-		  	}
-		  	.exclusive {
-		  		margin-top: 80px;		  		
-		  		@include column;		  		
-		  	}	    	
-		  	.certification {
-		  		margin-top: 80px;		  		
-    			@include column;
-		  	}	    		  	
-	    }
+  text-align: center;
+  color: $base-dark-font-color;
+  @include sexy-gradient();
+  p {
+    @include outer-container;
+  }
+  .why {
+    @include outer-container;
+    .practitioners {
+      margin-top: 80px;
+      @include column;
+    }
+    .exclusive {
+      margin-top: 80px;
+      @include column;
+    }
+    .certification {
+      margin-top: 80px;
+      @include column;
+    }
+  }
 }
 
-
 .logo {
-	h1 {
-		font-weight: bold;
-		strong {
-			font-weight: bold;
-			border-bottom: 3px solid $light-blue;
- 			display: inline;			
-		}	
-	}
+  h1 {
+    font-weight: bold;
+    strong {
+      font-weight: bold;
+      border-bottom: 3px solid $light-blue;
+      display: inline;
+    }
+  }
 }
 
 .container {
-	padding: 47px;
-    h1 {
-    	text-align: center;
-    }
-	@include media($mobile) {
-		padding: 20px;
-	}    
+  padding: 47px;
+  h1 {
+    text-align: center;
+  }
+  @include media($mobile) {
+    padding: 20px;
+  }
 }
 
 .trainings {
-	blockquote {
-		border-color: $light-blue;
-		a {
-			color: $light-blue;
-		}		
-	}
+
+  blockquote {
+    @include outer-container;
+    border-color: $light-blue;
+    a {
+      color: $light-blue;
+    }
+  }
+
 }
 
 .training {
-	@include outer-container;
-	margin-bottom: 100px;
-	.trainer {
-		text-align: center;
-		.pic {
-			@include circle();
-			margin-left: auto;
-			margin-right: auto;
-			margin-bottom: 25px;
-		}
-	}
 
-	header {
-		@include media($mobile) {
-			text-align: center;
-		}			
-		img {
-			position: relative;
-			top: 20px;
-			@include media($mobile) {
-				top: 0px;
-			}	
-		}
-		h2 {
-			display: inline;
-			position: relative;
-			margin-bottom: 10px;
-			@include media($mobile) {
-				display: block;
-				font-size: 1.5em;
-			}		  				  	  		
-		}		
-	}
+  @include outer-container;
 
+  margin-bottom: 100px;
 
-	h3 {
-		margin-bottom: 50px;
-	}
+  .trainer {
+    text-align: center;
+    .pic {
+      @include circle();
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 25px;
+    }
+  }
 
-	section {
-		@include outer-container;
-	  	.trainer {
-	  		@include column(3);
-	  	}
-	  	.description {
-	  		padding-left: 30px;
-	  		@include column(9);
-			@include media($mobile) {
-				margin-top: 30px;
-				text-align: center;
-			}		  				  	  		
-	  	}
-  	}
+  header {
+    @include media($mobile) {
+      text-align: center;
+    }
+    img {
+      position: relative;
+      top: 20px;
+      @include media($mobile) {
+        top: 0px;
+      }
+    }
+    h2 {
+      display: inline;
+      position: relative;
+      margin-bottom: 10px;
+      @include media($mobile) {
+        display: block;
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  h3 {
+    margin-bottom: 50px;
+  }
+
+  section {
+
+    @include outer-container;
+
+    .trainer {
+      @include column(3);
+    }
+
+    .description {
+      padding-left: 30px;
+      @include column(9);
+      @include media($mobile) {
+        margin-top: 30px;
+        text-align: center;
+      }
+    }
+
+  }
+
 }
 
 .actions {
-	@include outer-container;
-	margin-top: 20px;
+  @include outer-container;
+  margin-top: 20px;
 
-	.more {
-		@include column(6);
-	}
+  .more {
+    @include column(6);
+  }
 
-	.social {
-		text-align: right;
-		@include column(6);
-		@include media($mobile) {
-			margin-top: 40px;
-			text-align: center;
-		}
-	}
+  .social {
+    text-align: right;
+    @include column(6);
+    @include media($mobile) {
+      margin-top: 40px;
+      text-align: center;
+    }
+  }
 }
 
 footer {
-	@include footer
+  @include footer
 }

@@ -1,118 +1,118 @@
 doctype html
 html(itemscope itemtype="http://schema.org/Organization")
-	head
-		meta(charset="utf-8")
-		meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1")
 
-		title= "DevChampions – Relevant training for IT professionals"
-		meta(name="description" content="DevChampions offers high-quality training courses for developers and IT professionals in the Baltics. We specialize, but are not limited to engineering practices, software architecture, automation and Scrum certification.")
-		meta(name="keywords" content="dev training, training for developers, scrum certification")
+        title= "DevChampions – Relevant training for IT professionals"
+        meta(name="description" content="DevChampions offers high-quality training courses for developers and IT professionals in the Baltics. We specialize, but are not limited to engineering practices, software architecture, automation and Scrum certification.")
+        meta(name="keywords" content="dev training, training for developers, scrum certification")
 
-		meta(property="og:url" content="http://devchampions.com")
-		meta(property="og:type" content="website")
-		meta(property="og:title" content="DevChampions – Relevant training courses for IT professionals")
-		meta(property="og:description" content="DevChampions offers high-quality training courses for developers and IT professionals in the Baltics. We specialize, but are not limited to engineering practices, software architecture, automation and Scrum certification.")
-		meta(property="og:image" content="http://devchampions.com/img/index_og.png")
+        meta(property="og:url" content="http://devchampions.com")
+        meta(property="og:type" content="website")
+        meta(property="og:title" content="DevChampions – Relevant training courses for IT professionals")
+        meta(property="og:description" content="DevChampions offers high-quality training courses for developers and IT professionals in the Baltics. We specialize, but are not limited to engineering practices, software architecture, automation and Scrum certification.")
+        meta(property="og:image" content="http://devchampions.com/img/index_og.png")
 
-		meta(name="twitter:card" content="summary_large_image")
-		meta(name="twitter:site" content="@devchampions")
-		meta(name="twitter:creator" content="@devchampions")
-		meta(name="twitter:title" content="DevChampions – Relevant training courses for IT professionals")
-		meta(name="twitter:description" content="DevChampions offers high-quality training courses for developers and IT professionals in the Baltics. We specialize, but are not limited to engineering practices, software architecture, automation and Scrum certification.")
-		meta(name="twitter:image" content="http://devchampions.com/img/index_og.png")
+        meta(name="twitter:card" content="summary_large_image")
+        meta(name="twitter:site" content="@devchampions")
+        meta(name="twitter:creator" content="@devchampions")
+        meta(name="twitter:title" content="DevChampions – Relevant training courses for IT professionals")
+        meta(name="twitter:description" content="DevChampions offers high-quality training courses for developers and IT professionals in the Baltics. We specialize, but are not limited to engineering practices, software architecture, automation and Scrum certification.")
+        meta(name="twitter:image" content="http://devchampions.com/img/index_og.png")
 
-		//- favicon
-		link(rel="shortcut icon" href="/favicon.ico")
-		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
-		link(rel="stylesheet" href="/css/style.css")
-		script(src="/js/main.js")
-	body
-		include facebook.jade
-		header#header
-			.container
-				.menu
-					a(href="#about") About
-					a(href="#trainings") Training courses
-					a(href="#contacts") Contacts
-					a(href="https://twitter.com/devchampions")
-						i(class="fa fa-twitter")
-					a(href="https://www.facebook.com/devchampions")
-						i(class="fa fa-facebook")
-					a(href="https://linkedin.com/company/devchampions")
-						i(class="fa fa-linkedin")
-				.logo
-					h1
-						a(href="/")
-							img.achivement(src="/img/devchampion.png" alt="achivement")
-							strong dev
-							| champions
-				h2 Relevant training courses for you and your tech peers directly from industry influencers.
-				input#champion(type="button" value="Become a champion")
+        //- favicon
+        link(rel="shortcut icon" href="/favicon.ico")
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+        link(rel="stylesheet" href="/css/style.css")
+        script(src="/js/main.js")
+    body
+        include facebook.jade
+        header#header
+            .container
+                .menu
+                    a(href="#about") About
+                    a(href="#trainings") Training courses
+                    a(href="#contacts") Contacts
+                    a(href="https://twitter.com/devchampions")
+                        i(class="fa fa-twitter")
+                    a(href="https://www.facebook.com/devchampions")
+                        i(class="fa fa-facebook")
+                    a(href="https://linkedin.com/company/devchampions")
+                        i(class="fa fa-linkedin")
+                .logo
+                    h1
+                        a(href="/")
+                            img.achivement(src="/img/devchampion.png" alt="achivement")
+                            strong dev
+                            | champions
+                h2 Relevant training courses for you and your tech peers directly from industry influencers.
+                input#champion(type="button" value="Become a champion")
 
-		.about#about
-			.container
-				h1 About
-				p DevChampions offers high-quality training courses for developers and IT professionals in the Baltics. We specialize, but are not limited to engineering practices, software architecture, automation, Agile methodologies and soft skills. We carefully choose only the best trainers, because we value your time and believe you must learn directly from industry influencers. People choose us because we offer:
-				.why
-					section.practitioners
-						i(class="fa roundy fa-diamond")
-						h2 The best trainers
-						p DevChampions center is led by industry practioners (we founded
-							a(href="http://latcraft.lv") Latvian Software Craftsmanship Community
-							| and
-							a(href="http://devternity.com") DevTernity Conference
-							| ). That lets us choose only the best trainers - we know those who deliver excellent training courses in person.
-					section.exclusive
-						i(class="fa roundy fa-balance-scale")
-						h2 Theory and practice balance
-						| Theory without practice is worthless. Nevertheless, in order to understand the topic you need to build strong theoretical foundation. Our training courses offer great mix of theory, hands-on exercises and teamwork.
-					section.certification
-						i(class="fa roundy fa-certificate")
-						h2 Certification
-						| For every successfully accomplished training you earn a certificate. Stay out of the crowd by sharing your achivements with prospective employers, community and peers.
-				p &nbsp;
-		.trainings#trainings
-			.container
-				h1 Scheduled training courses
-				each training in trainings
-					section.training
-						header
-							h2.title #{training.title}
-							if training.badge
-								img(src='/img/' + training.badge + '.png' alt="Certificate")
-							if training.date
-								h3 #{training.date}, #{training.location}
-							else
-								h3 #{training.location}
-						section
-							.trainer
-								div(class='pic icon-' + training.trainer.pic)
-								div
-									a(href='https://twitter.com/' + training.trainer.twitter)
-										img(src="/img/twitter.png" alt="#{training.trainer.twitter}")
-									strong &nbsp;#{training.trainer.name}
-									br
-									| #{training.trainer.title}
-							.description
-								| #{training.description}
-								.actions
-									.more
-										a.action(href="#{training.url}") More information
-									.social
-										.fb-like(data-href="http://devchampions.com/#{training.url}" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true")
-				p
-					blockquote
-						strong Didn't find a training for you?
-						| No problem,
-						a.darken(href="#contacts") let us know
-						|  what topic you are interested in and we will handle all organisational aspects including finding the best trainer, price negotiation and logistics. Please let us know if you prefer in-house training.
-				p
-					blockquote
-						| Never miss a training by
-						a.darken(href="http://devchampions.us12.list-manage1.com/subscribe?u=116ead2ab26f64dec3cbc60b5&id=c62c07ab37") subscribing
-						|  to our mailing list. We will keep you posted only on major happenings and announcements.
-		include footer.jade
-		include ga.jade
-		include sumome.jade
-		include tawk.jade
-		include twitter.jade
+        .about#about
+            .container
+                h1 About
+                p DevChampions offers high-quality training courses for developers and IT professionals in the Baltics. We specialize, but are not limited to engineering practices, software architecture, automation, Agile methodologies and soft skills. We carefully choose only the best trainers, because we value your time and believe you must learn directly from industry influencers. People choose us because we offer:
+                .why
+                    section.practitioners
+                        i(class="fa roundy fa-diamond")
+                        h2 The best trainers
+                        p DevChampions center is led by industry practioners (we founded&nbsp;
+                            a(href="http://latcraft.lv") Latvian Software Craftsmanship Community
+                            | &nbsp;and&nbsp;
+                            a(href="http://devternity.com") DevTernity Conference
+                            | ). That lets us choose only the best trainers - we know those who deliver excellent training courses in person.
+                    section.exclusive
+                        i(class="fa roundy fa-balance-scale")
+                        h2 Theory and practice balance
+                        | Theory without practice is worthless. Nevertheless, in order to understand the topic you need to build strong theoretical foundation. Our training courses offer great mix of theory, hands-on exercises and teamwork.
+                    section.certification
+                        i(class="fa roundy fa-certificate")
+                        h2 Certification
+                        | For every successfully accomplished training you earn a certificate. Stay out of the crowd by sharing your achivements with prospective employers, community and peers.
+                p &nbsp;
+        .trainings#trainings
+            .container
+                h1 Scheduled training courses
+                each training in trainings
+                    section.training
+                        header
+                            h2.title #{training.title}
+                            if training.badge
+                                img(src='/img/' + training.badge + '.png' alt="Certificate")
+                            if training.date
+                                h3 #{training.date}, #{training.location}
+                            else
+                                h3 #{training.location}
+                        section
+                            .trainer
+                                div(class='pic icon-' + training.trainer.pic)
+                                div
+                                    a(href='https://twitter.com/' + training.trainer.twitter)
+                                        img(src="/img/twitter.png" alt="#{training.trainer.twitter}")
+                                    strong &nbsp;#{training.trainer.name}
+                                    br
+                                    | #{training.trainer.title}
+                            .description
+                                | #{training.description}
+                                .actions
+                                    .more
+                                        a.action(href="#{training.url}") More information
+                                    .social
+                                        .fb-like(data-href="http://devchampions.com/#{training.url}" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true")
+                p
+                    blockquote
+                        strong Didn't find a training for you?&nbsp;
+                        | No problem,&nbsp;
+                        a.darken(href="#contacts") let us know
+                        |  what topic you are interested in and we will handle all organisational aspects including finding the best trainer, price negotiation and logistics. Please let us know if you prefer in-house training.
+                p
+                    blockquote
+                        | Never miss a training by&nbsp;
+                        a.darken(href="http://devchampions.us12.list-manage1.com/subscribe?u=116ead2ab26f64dec3cbc60b5&id=c62c07ab37") subscribing
+                        |  to our mailing list. We will keep you posted only on major happenings and announcements.
+        include footer.jade
+        include ga.jade
+        include sumome.jade
+        include tawk.jade
+        include twitter.jade
