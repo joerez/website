@@ -1,19 +1,19 @@
 {
-    "name": "devchampions",
-    "version": "1.0.0",
-    "description": "DevChampions.com website",
-    "license": "UNLICENSED",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/devchampions/website"
-    },      
-    "dependencies": {
+  "name": "devchampions",
+  "version": "1.0.0",
+  "description": "DevChampions.com website",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devchampions/website"
+  },
+  "dependencies": {
     "gulp": "^3.9.0",
     "gulp-jade": "^1.1.0",
     "gulp-sass": "^2.1.1",
     "gulp-data": "^1.2.1",
     "gulp-if": "^2.0.0",
-    "gulp-image-resize": "^0.7.1",    
+    "gulp-image-resize": "^0.7.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-gh-pages": "^0.5.4",
     "gulp.spritesmith": "^6.0.1",
@@ -29,6 +29,7 @@
     "node-bourbon": "^4.2.8",
     "node-neat": "^1.7.2",
     "lodash": "^4.0.0",
-    "moment": "^2.11.2"
-    }
+    "moment": "^2.11.2",
+    "glob": "^7.1.2"
+  }
 }
