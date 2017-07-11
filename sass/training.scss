@@ -94,6 +94,23 @@ header#header {
   @include column(4, 12);
 }
 
+.address {
+  text-align: center;
+  @include outer-container;
+  strong {
+    font-weight: bold;
+  }
+}
+
+.locations {
+  @include outer-container;
+}
+
+.location {
+  text-align: center;
+  @include column(4, 12);
+}
+
 #testimonials {
   .quote {
     blockquote {

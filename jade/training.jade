@@ -66,6 +66,22 @@ html
                                 i(class="fa roundy fa-globe")
                                 h2 Language
                                 p #{language}
+            if address
+                section#location
+                    .container
+                        header
+                            h1 Location
+                        article
+                            .address
+                                section
+                                    h2
+                                        strong Address:&nbsp;
+                                        | #{address}
+                            if locationPictures
+                                .locations
+                                    each picture, no in locationPictures
+                                        section.location
+                                            img(src="#{picture}")
             block testimonials
             section#trainer
                 .container
@@ -85,6 +101,8 @@ html
                                 block trainer
             section#offers
                 .container
+                    header
+                        h1 Booking
                     each offer, no in offers
                         if offer.name
                             .offer

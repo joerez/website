@@ -10,6 +10,12 @@
   "language": "The course is taught in English.",
   "date": "5-6 October 2017",
   "location": "Munich, Germany",
+  "address": "Hopfenstraße 8 / Rundfunkplatz 2, 80335, München, Deutschland",
+  "locationPictures": [
+    "/img/locations/munich_location_1.png",
+    "/img/locations/munich_location_2.png",
+    "/img/locations/munich_location_3.png"
+  ],
   "twitter": "codingandrey",
   "badge": "",
   "book": "https://devchampions.typeform.com/to/JgnYkE",
