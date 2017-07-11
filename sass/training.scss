@@ -102,6 +102,15 @@ header#header {
   }
 }
 
+.photos {
+  @include outer-container;
+}
+
+.photo {
+  text-align: center;
+  @include column(4, 12);
+}
+
 .locations {
   @include outer-container;
 }
