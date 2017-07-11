@@ -23,7 +23,6 @@ var gulp = require('gulp'),
     _ = require('lodash');
 
 var publicDir = 'www';
-var tempDir = "tmp";
 
 gulp.task('connect', function () {
     connect.server({
@@ -34,7 +33,7 @@ gulp.task('connect', function () {
 });
 
 gulp.task('build', function () {
-    gulp.start('buildSequence');
+    gulp.run('buildSequence');
 });
 
 gulp.task('buildSequence', sequence('img', 'sass', 'jade', 'uglify', 'fonts', 'copy'));
