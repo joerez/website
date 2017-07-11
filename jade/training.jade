@@ -1,111 +1,111 @@
 doctype html
 html
-	block vars
-	head
-		meta(charset="utf-8")
-		meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1")
-		title #{title} - Training and Certification classes
-		meta(name="description" content="#{metaDescription}")
-		meta(name="keywords" content="#{keywords}")
+    block vars
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1")
+        title #{title} - Training and Certification classes
+        meta(name="description" content="#{metaDescription}")
+        meta(name="keywords" content="#{keywords}")
 
-		meta(property="og:image" content="http://devchampions.com/img/#{ogImage}")
-		meta(property="og:url" content="http://devchampions.com/training/#{path}/")
-		meta(property="og:title" content="#{title} - Training and Certification")
-		meta(property="og:description" content="#{metaDescription}")
+        meta(property="og:image" content="http://devchampions.com/img/#{ogImage}")
+        meta(property="og:url" content="http://devchampions.com/training/#{path}/")
+        meta(property="og:title" content="#{title} - Training and Certification")
+        meta(property="og:description" content="#{metaDescription}")
 
-		meta(name="twitter:card" content="summary_large_image")
-		meta(name="twitter:site" content="@devchampions")
-		meta(name="twitter:creator" content="@devchampions")
-		meta(name="twitter:title" content="#{title} - Training and Certification")
-		meta(name="twitter:description" content="#{metaDescription}")
-		meta(name="twitter:image" content="http://devchampions.com/img/#{ogImage}")
+        meta(name="twitter:card" content="summary_large_image")
+        meta(name="twitter:site" content="@devchampions")
+        meta(name="twitter:creator" content="@devchampions")
+        meta(name="twitter:title" content="#{title} - Training and Certification")
+        meta(name="twitter:description" content="#{metaDescription}")
+        meta(name="twitter:image" content="http://devchampions.com/img/#{ogImage}")
 
-		link(rel="shortcut icon" href="/favicon.ico")
-		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
-		link(rel="stylesheet" href="/css/training.css")
-	body
-		script(src="/js/main.js")
-		include facebook.jade
-		header#header
-			.container
-				.menu
-					a(href="/") ← To training course list
-				.logo
-					h1
-						a(href="#")
-							if badge
-								img.badge(src='/img/' + badge + '.png' alt="Certificate")
-							strong  #{title}
-				if date
-					h2 #{date}, #{location}
-				else
-					h2 #{location}
-		main
-			section#description
-				.container
-					header
-						h1 Course description
-					article
-						block description
-						.shorties
-							section.shorty
-								i(class="fa roundy fa-group")
-								h2 Audience
-								p #{audience}
-							section.shorty
-								i(class="fa roundy fa-certificate")
-								h2 Certification
-								p #{certification}
-								p
-									if exampleCertificate
-										a(href='#{exampleCertificate}' target='_blank')
-											| View example certificate
-							section.shorty
-								i(class="fa roundy fa-globe")
-								h2 Language
-								p #{language}
-			block testimonials
-			section#trainer
-				.container
-					section.training
-						header
-							h1.title Trainer
-						section
-							.trainer
-								div(class='pic icon-' + trainer.pic)
-								div
-									a(href='https://twitter.com/' + trainer.twitter)
-										img(src="/img/twitter.png" alt="#{trainer.twitter}")
-									strong &nbsp;#{trainer.name}
-									br
-									| #{trainer.title}
-							.description
-								block trainer
-
-			section#offers
-				.container
-					each offer, no in offers
-						if offer.name
-							.offer
-								h2 #{offer.name}
-								if offer.info
-									h3 #{offer.info}
-								else
-									h3 &nbsp;
-								.price
-									.child #{offer.price}€
-								.actions
-									a.action(href="#{offer.book ? offer.book : book}") Book now
-						else
-							.polyfill &nbsp;
-				.pricing-clarify
-					p * Price does not include VAT (if applicable)
-					p * Price for in-house training does not include travelling and accommodation costs (if training is hosted outside of Riga)
-					p
-						| * This training is a subject to training cancellation
-						a.darken(href="/cancel.html") policy
-		include footer.jade
-		include ga.jade
-		include sumome.jade
-		include tawk.jade
-		include twitter.jade
+        link(rel="shortcut icon" href="/favicon.ico")
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+        link(rel="stylesheet" href="/css/training.css")
+    body
+        script(src="/js/main.js")
+        include facebook.jade
+        header#header
+            .container
+                .menu
+                    a(href="/") ← To training course list
+                .logo
+                    h1
+                        a(href="#")
+                            if badge
+                                img.badge(src='/img/' + badge + '.png' alt="Certificate")
+                            strong  #{title}
+                if date
+                    h2 #{date}, #{location}
+                else
+                    h2 #{location}
+        main
+            section#description
+                .container
+                    header
+                        h1 Course description
+                    article
+                        block description
+                        .shorties
+                            section.shorty
+                                i(class="fa roundy fa-group")
+                                h2 Audience
+                                p #{audience}
+                            section.shorty
+                                i(class="fa roundy fa-certificate")
+                                h2 Certification
+                                p #{certification}
+                                p
+                                    if exampleCertificate
+                                        a(href='#{exampleCertificate}' target='_blank')
+                                            | View example certificate
+                            section.shorty
+                                i(class="fa roundy fa-globe")
+                                h2 Language
+                                p #{language}
+            block testimonials
+            section#trainer
+                .container
+                    section.training
+                        header
+                            h1.title Trainer
+                        section
+                            .trainer
+                                div(class='pic icon-' + trainer.pic)
+                                div
+                                    a(href='https://twitter.com/' + trainer.twitter)
+                                        img(src="/img/twitter.png" alt="#{trainer.twitter}")
+                                    strong &nbsp;#{trainer.name}
+                                    br
+                                    | #{trainer.title}
+                            .description
+                                block trainer
+            section#offers
+                .container
+                    each offer, no in offers
+                        if offer.name
+                            .offer
+                                h2 #{offer.name}
+                                if offer.info
+                                    h3 #{offer.info}
+                                else
+                                    h3 &nbsp;
+                                .price
+                                    .child #{offer.price}€
+                                .actions
+                                    a.action(href="#{offer.book ? offer.book : book}") Book now
+                        else
+                            .polyfill &nbsp;
+                .container
+                    .pricing-clarify
+                        p * Price does not include VAT (if applicable)
+                        p * Price for in-house training does not include travelling and accommodation costs (if training is hosted outside of Riga)
+                        p
+                            | * This training is a subject to training cancellation&nbsp;
+                            a.darken(href="/cancel.html") policy
+        include footer.jade
+        include ga.jade
+        include sumome.jade
+        include tawk.jade
+        include twitter.jade

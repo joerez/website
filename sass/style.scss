@@ -54,6 +54,12 @@ header#header {
   }
 }
 
+.cancel {
+  p {
+    @include outer-container;
+  }
+}
+
 .logo {
   h1 {
     font-weight: bold;

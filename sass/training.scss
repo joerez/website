@@ -106,6 +106,7 @@ header#header {
 }
 
 #offers {
+  @include outer-container;
   .polyfill {
     @include column(4, 12, 12)
   }
@@ -115,7 +116,7 @@ header#header {
     margin-top: 25px;
     margin-bottom: 25px;
     text-align: center;
-    @include column(4, 12, 12)
+    @include column(4, 12, 12);
     @include border-width(2px);
     @include border-style(solid);
     @include border-color(#5E98BA);
