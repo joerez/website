@@ -1,0 +1,33 @@
+{
+	"title": "Practical Machine Learning with Functional Programming",
+	"subtitle": "",
+	"ogImage": "",
+	"keywords": "machine learning, f#",
+	"metaDescription": "In this workshop, you’ll take a 100% hands-on approach, and learn practical ideas from Machine Learning, by tackling real-world problems and implementing solutions in F#, in a functional style",
+	"description": "Machine Learning and Functional Programming are both very hot topics these days; they are also both rather intimidating for the beginner. In this workshop, we’ll take a 100% hands-on approach, and learn practical ideas from Machine Learning, by tackling real-world problems and implementing solutions in F#, in a functional style. In the process, you will see that once you get beyond the jargon, F# and Machine Learning are actually not all that complicated – and fit beautifully together.",
+	"audience": "Developers, architects, technical leads, delivery leads",
+	"certification": "You earn a certificate of participation by attending the course. No exam required.",
+	"language": "The course is taught in English.",
+	"date": "2nd of December",	
+	"location": "Riga, Latvia",
+	"badge": "",
+	"book": "http://devternity.com",
+	"tags": [ ],
+	"offers": [
+		{
+		},
+		{
+			"name": "Wiseman",
+			"price": "299",
+			"info": "Booking is available at DevTernity website"
+		},
+		{
+		}
+	],
+	"trainer": {
+		"twitter": "evelgab",
+		"name": "Evelina Gabasova",
+		"title": "Machine Learning Researcher, PhD @ University of Cambridge, Microsoft MVP",
+		"pic": "evelina"
+	}
+}

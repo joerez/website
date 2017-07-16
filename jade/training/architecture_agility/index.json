@@ -1,5 +1,5 @@
 {
-	"title": "Architecture with Agility",
+	"title": "Agile Architecture",
 	"subtitle": "",
 	"ogImage": "",
 	"keywords": "agile architecture training, evolutionary architecture training",
@@ -8,6 +8,7 @@
 	"audience": "Developers, architects, technical leads, delivery leads",
 	"certification": "You earn a certificate of participation by attending the course. No exam required.",
 	"language": "The course is taught in English.",
+	"date": "2nd of December",		
 	"location": "Riga, Latvia",
 	"badge": "",
 	"book": "http://devternity.com",
@@ -16,6 +17,9 @@
 		{
 		},
 		{
+			"name": "Wiseman",
+			"price": "299",
+			"info": "Booking is available at DevTernity website"
 		},
 		{
 		}
