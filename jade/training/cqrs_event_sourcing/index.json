@@ -1,0 +1,33 @@
+{
+	"title": "Building Event-Sourcing and CQRS Applications using Spring Stream",
+	"subtitle": "",
+	"ogImage": "",
+	"keywords": "cqrs, event sourcing, java, spring stream, workshop",
+	"metaDescription": "In this hands-on workshop, together with Jakub you're gonna build a fully featured distributed system from a scratch using Spring Boot and Spring Cloud Stream.",
+	"description": "In this hands-on workshop, together with Jakub you're gonna build a fully featured distributed system from a scratch using Spring Boot and Spring Cloud Stream.",
+	"audience": "Developers, architects, technical leads, delivery leads",
+	"certification": "You earn a certificate of participation by attending the course. No exam required.",
+	"language": "The course is taught in English.",
+	"date": "2nd of December",
+	"location": "Riga, Latvia",
+	"badge": "",
+	"book": "http://devternity.com",
+	"tags": [ ],
+	"offers": [
+		{
+		},
+		{
+			"name": "Wiseman",
+			"price": "299",
+			"info": "Booking is available at DevTernity website"
+		},
+		{
+		}
+	],
+	"trainer": {
+		"twitter": "jakubpilimon",
+		"name": "Jakub Pilimon",
+		"title": "Software Developer, Trainer @ ‎Bottega IT Minds, DZone's Most-Valuable Blogger",
+		"pic": "pilo"
+	}
+}

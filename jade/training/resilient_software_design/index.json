@@ -1,0 +1,33 @@
+{
+	"title": "Resilient Software Design in Theory and Practice",
+	"subtitle": "",
+	"ogImage": "",
+	"keywords": "resilience, fault-tolerance",
+	"metaDescription": "Workshop on desinging applications in a resilient way, understanding resilience pattern landscape, learning the advanced patterns and appyling them in practice.",
+	"description": "Workshop on desinging applications in a resilient way, understanding resilience pattern landscape, learning the advanced patterns and appyling them in practice.",
+	"audience": "Developers, architects, technical leads, delivery leads",
+	"certification": "You earn a certificate of participation by attending the course. No exam required.",
+	"language": "The course is taught in English.",
+	"date": "2nd of December",
+	"location": "Riga, Latvia",
+	"badge": "",
+	"book": "http://devternity.com",
+	"tags": [ ],
+	"offers": [
+		{
+		},
+		{
+			"name": "Wiseman",
+			"price": "299",
+			"info": "Booking is available at DevTernity website"
+		},
+		{
+		}
+	],
+	"trainer": {
+		"twitter": "ufried",
+		"name": "Uwe Friedrichsen",
+		"title": "CTO @ Codecentric, Fellow, Speaker, Nerd, Consultant",
+		"pic": "uwe"
+	}
+}
