@@ -1,0 +1,33 @@
+{
+	"title": "Modern Infrastructure with the HashiStack",
+	"subtitle": "",
+	"ogImage": "",
+	"keywords": "terraform, packer, iac",
+	"metaDescription": "This is a comprehensive, engineer led course that covers building infrastructure in an IaC (Infrastructure as Code) fashion, using HashiCorp's Packer and Terraform tools.",
+	"description": "This is a comprehensive, engineer led course that covers building infrastructure in an IaC (Infrastructure as Code) fashion, using HashiCorp's Packer and Terraform tools.",
+	"audience": "Developers, architects, ops, automation engineers",
+	"certification": "You earn a certificate of participation by attending the course. No exam required.",
+	"language": "The course is taught in English.",
+	"date": "2nd of December",
+	"location": "Riga, Latvia",
+	"badge": "",
+	"book": "http://devternity.com",
+	"tags": [ ],
+	"offers": [
+		{
+		},
+		{
+			"name": "Wiseman",
+			"price": "299",
+			"info": "Booking is available at DevTernity website"
+		},
+		{
+		}
+	],
+	"trainer": {
+		"twitter": "stack72",
+		"name": "Paul Stack",
+		"title": "Software Engineer @ Hashicorp, UK",
+		"pic": "pstack"
+	}
+}
