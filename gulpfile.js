@@ -91,7 +91,11 @@ gulp.task('jade', function () {
                 return _.extend({}, json, {url: parentDir});
             })
             .sortBy(function (json) {
-                return moment(json.date, 'DD MMMM YYYY').unix()
+                var date = json.date;
+                if (json.locations) {
+                    date = json.locations[0].date;
+                }
+                return moment(date, 'DD MMMM YYYY').unix()
             })
             .value();
     };

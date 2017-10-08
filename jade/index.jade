@@ -83,6 +83,9 @@ html(itemscope itemtype="http://schema.org/Organization")
                                 h3 #{training.date}, #{training.location}
                             else
                                 h3 #{training.location}
+                            if training.locations
+                                each location in training.locations
+                                    h3 #{location.date}, #{location.city}                                
                         section
                             .trainer
                                 div(class='pic icon-' + training.trainer.pic)

@@ -42,6 +42,12 @@ html
                         a.action(href="#offers") Book now
                 else
                     h2 #{location}
+                if locations
+                    each location in locations
+                        h3 #{location.date}, #{location.city}     
+                    h3 &nbsp;                            
+                    h2
+                        a.action(href="#offers") Book now                            
         main
             section#description
                 .container
