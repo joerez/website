@@ -29,7 +29,7 @@
   ],
   "twitter": "codingandrey",
   "badge": "",
-  "book": "https://devchampions.typeform.com/to/JgnYkE",
+  "book": "https://devchampions.typeform.com/to/nHd71h",
   "tags": [
     "engineering",
     "automation",
@@ -43,7 +43,8 @@
   "offers": [
     {
       "name": "Early Bird",
-      "price": "899"
+      "price": "899",
+      "info": "60 days before the course"
     },
     {
       "name": "Wise Bird",
