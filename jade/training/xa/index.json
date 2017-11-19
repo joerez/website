@@ -8,7 +8,6 @@
   "audience": "Developers, software architects, technical project managers, system administrators.",
   "certification": "You earn eXtreme Automation certificate by attending the course. No exam required.",
   "language": "The course is taught in English.",
-  "date": "5-6 October 2017",
   "exampleCertificate": "http://certs.devchampions.com/NDEMLJTDBF/",
   "locations": [
     {
@@ -44,13 +43,11 @@
   "offers": [
     {
       "name": "Early Bird",
-      "price": "899",
-      "info": "until 30 Aug, 2017"
+      "price": "899"
     },
     {
       "name": "Wise Bird",
-      "price": "1199",
-      "info": "until 04 Oct, 2017"
+      "price": "1199"
     },
     {
       "name": "In-house",
