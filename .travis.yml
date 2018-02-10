@@ -1,7 +1,7 @@
 language:
 - node_js
 node_js:
-- 5.0.0
+- 8.0.0
 before_script:
 - npm install -g gulp
 - yarn
