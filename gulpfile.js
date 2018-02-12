@@ -88,8 +88,15 @@ gulp.task('jade', function () {
             .map(function (file) {
                 var json = require('./' + file);
                 var parentDir = "training/" + path.dirname(file).split("/")[2];
-                return _.extend({}, json, {url: parentDir});
+                if (json.editions) {
+                    return _.map(json.editions, function(edition) {
+                        return _.extend({templateDir: parentDir}, json, edition);
+                    })
+                } else {
+                    return _.extend({templateDir: parentDir}, json, {url: parentDir});
+                }                
             })
+            .flatMap()
             .sortBy(function (json) {
                 var date = json.date;
                 if (json.locations) {
@@ -98,7 +105,7 @@ gulp.task('jade', function () {
                 return moment(date, 'DD MMMM YYYY').unix()
             })
             .value();
-    };
+    }();
 
     gulp.src('./jade/cancel.jade')
         .pipe(jade({
@@ -110,23 +117,24 @@ gulp.task('jade', function () {
     gulp.src('./jade/index.jade')
         .pipe(jade({
             locals: {
-                "trainings": trainings()
+                "trainings": trainings
             },
             pretty: true
         }))
         .pipe(gulp.dest(publicDir))
         .pipe(connect.reload());
 
-    gulp.src('./jade/**/*/{index,index_og}.jade')
-        .pipe(data(function (file_) {
-            var file = path.parse(file_.path);
-            return require(file.dir + "/index.json");
-        }))
-        .pipe(jade({
-            pretty: true
-        }))
-        .pipe(gulp.dest(publicDir))
-        .pipe(connect.reload());
+    trainings.forEach(function(tr) {
+        gulp.src('./jade/' + tr.templateDir + '/index.jade')
+            .pipe(data(function (file_) {
+                return tr;
+            }))
+            .pipe(jade({
+                pretty: true
+            }))
+            .pipe(gulp.dest(publicDir + '/' + tr.url))
+            .pipe(connect.reload());
+    })
 });
 
 gulp.task('uglify', function () {
