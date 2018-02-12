@@ -50,6 +50,17 @@ input[type="button"],
   }
 
 
+.action2 {
+  border: 1px solid white;
+  background: rgba(1, 1, 1, 0.5);
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  padding: 15px;
+  &:hover {
+    background: rgba(1, 1, 1, 0.8);
+    color: white;
+  }
+}
+
 .action {
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   background-color: $light-blue;
