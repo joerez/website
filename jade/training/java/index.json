@@ -1,6 +1,7 @@
 {
 	"title": "Effective Coding Principles and Patterns in Modern Java",
 	"subtitle": "",
+	"customBg": "/img/sizovs_bg.jpg",
 	"ogImage": "java8_og.png",
 	"keywords": "clean code training, java best practices, java clean code, java training, java conference, java conference 2017, clean code rules, writing clean code",
 	"metaDescription": "Practical 2-day training/workshop that will teach you principles, practices and patterns for writing readable, maintainable and effective code in Java 9.",

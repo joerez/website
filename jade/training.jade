@@ -23,6 +23,11 @@ html
         link(rel="shortcut icon" href="/favicon.ico")
         link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
         link(rel="stylesheet" href="/css/training.css")
+        if customBg
+            style
+                | header#header {
+                |    background-image: url(#{customBg})
+                | }
     body
         script(src="/js/main.js")
         include facebook.jade
