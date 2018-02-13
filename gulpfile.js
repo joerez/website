@@ -82,10 +82,12 @@ gulp.task('jade', function () {
     var trainings = function () {
         var files = glob.sync("jade/training/*/index.json");
         return _.chain(files)
-            .filter(function (file) {
+            // removing hidden trainings
+            .filter(function(file) {
                 return !_.includes(path.dirname(file), '__');
             })
-            .map(function (file) {
+            // generating multi-edition trainings (e.g. Java 8 & Java 9)
+            .map(function(file) {
                 var json = require('./' + file);
                 var parentDir = "training/" + path.dirname(file).split("/")[2];
                 if (json.editions) {
@@ -97,7 +99,50 @@ gulp.task('jade', function () {
                 }                
             })
             .flatMap()
-            .sortBy(function (json) {
+            // generating multi-landing trainings
+            .map(function(training) {
+                var landings = _.map(training.landings ? training.landings.locations : [], function(it) {
+                   return _.extend({}, training, { landing: true });
+                });
+                return _.concat(landings, training);
+            })
+            .flatMap()
+            // generating landing pages for different locations
+            .map(function(training) {
+                if (training.landing) {
+                    return _.map(training.landings ? training.landings.locations : [], function(it) {
+                        var city = it.location.split(',')[0].trim().toLowerCase();
+                        return _.extend({}, training, {
+                                date : it.date,
+                                url: training.url + '/' + city,
+                                location: it.location
+                        });
+                    });
+                } else {
+                    return training;
+                }
+            })
+            .flatMap()
+            // generating landing pages for different dates
+            .map(function(training) {
+                if (training.landing) {
+                    return _.map(training.landings.dates, function(it) {
+                        var month = it.date.match(/([A-Za-z]+)/)[0].toLowerCase();
+                        var url = training.url + '/' + month;
+                        console.log("Generating a training (landing) at " + url);
+                        return _.extend({}, training,
+                            {
+                                date : it.date,
+                                url: url
+                            });
+                    })
+                } else {
+                    console.log("Generating a training at " + training.url);
+                    return training;
+                }
+            })
+            .flatMap()
+            .sortBy(function(json) {
                 var date = json.date;
                 if (json.locations) {
                     date = json.locations[0].date;
@@ -114,10 +159,14 @@ gulp.task('jade', function () {
         .pipe(gulp.dest(publicDir))
         .pipe(connect.reload());
 
+    var trainingsVisibleOnFrontPage = _.filter(trainings, function(training) {
+        return !training.landing;
+    });
+
     gulp.src('./jade/index.jade')
         .pipe(jade({
             locals: {
-                "trainings": trainings
+                "trainings": trainingsVisibleOnFrontPage
             },
             pretty: true
         }))

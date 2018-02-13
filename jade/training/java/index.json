@@ -8,6 +8,51 @@
 	"certification": "After 2 days of intensive work, you earn a certificate of accomplishment.",
 	"exampleCertificate": "http://certs.devchampions.com/0N2C7ZR6XR/",
 	"language": "The course is taught in English.",
+	"landings": {
+		"dates": [
+			{
+				"date": "22-23 Mar 2018"
+			},
+			{
+				"date": "26-27 Apr 2018"
+			},
+			{
+				"date": "24-25 May 2018"
+			},
+			{
+				"date": "28-29 Jun 2018"
+			},
+			{
+				"date": "26-27 Jul 2018"
+			},
+			{
+				"date": "30-31 Aug 2018"
+			},
+			{
+				"date": "28-29 Sep 2018"
+			},
+			{
+				"date": "25-26 Oct 2018"
+			},
+			{
+				"date": "22-23 Nov 2018"
+			},
+			{
+				"date": "20-21 Dec 2018"
+			}
+		],
+		"locations": [
+			{
+				"location": "Berlin, Germany"
+			},
+			{
+				"location": "Munich, Germany"
+			},
+			{
+				"location": "Riga, Latvia"
+			}
+		]
+	},
 	"editions": [
 		{
 			"url": "training/java",
@@ -20,12 +65,8 @@
 			"version": "Java 9"			
 		}
 	],
-	"locations": [
-		{
-			"date": "13-14 Sep 2018",
-			"city": "🇱🇻 Riga, Latvia"
-		}		
-	],
+	"location": "Riga, Latvia",
+	"date": "28-29 Sep 2018",
 	"badge": "",
 	"book": "https://devchampions.typeform.com/to/ULhC14",
 	"tags": [ ],
