@@ -72,12 +72,12 @@
 	"offers": [
 		{
 			"name": "Single",
-			"price": "1300"
+			"price": "1299"
 		},
 		{
 			"name": "Double",
 			"info": "2 people from the same company",			
-			"price": "2500"
+			"price": "2499"
 		},		
 		{
 			"name": "In-house",
