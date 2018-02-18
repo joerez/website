@@ -45,8 +45,116 @@
 				"location": "Berlin, Germany"
 			},
 			{
+				"location": "Frankfurt, Germany"
+			},			
+			{
+				"location": "Hamburg, Germany"
+			},
+			{
+				"location": "Dusseldorf, Germany"
+			},															
+			{
 				"location": "Munich, Germany"
 			},
+			{
+				"location": "Vienna, Austria"
+			},			
+			{
+				"location": "Dublin, Ireland"
+			},			
+			{
+				"location": "Cork, Ireland"
+			},									
+			{
+				"location": "London, United Kingdom"
+			},						
+			{
+				"location": "Liverpool, United Kingdom"
+			},						
+			{
+				"location": "Manchester, United Kingdom"
+			},							
+			{
+				"location": "Edinburgh, Scotland"
+			},									
+			{
+				"location": "Glasgow, Scotland"
+			},
+			{
+				"location": "Zurich, Switzerland"
+			},									
+			{
+				"location": "Geneva, Switzerland"
+			},
+			{
+				"location": "Brussels, Belgium"
+			},
+			{
+				"location": "Antwerp, Belgium"
+			},
+			{
+				"location": "Luxembourg, Luxembourg"
+			},
+			{
+				"location": "Warsaw, Poland"
+			},						
+			{
+				"location": "Krakow, Poland"
+			},						
+			{
+				"location": "Prague, Czech Republic"
+			},						
+			{
+				"location": "Brno, Czech Republic"
+			},					
+			{
+				"location": "Budapest, Hungary"
+			},								
+			{
+				"location": "Bucharest, Romania"
+			},									
+			{
+				"location": "Cluj-Napoca, Romania"
+			},							
+			{
+				"location": "Sofia, Bulgaria"
+			},								
+			{
+				"location": "Istanbul, Turkey"
+			},																							
+			{
+				"location": "Tbilisi, Georgia"
+			},																										
+			{
+				"location": "Tallinn, Estonia"
+			},
+			{
+				"location": "Tartu, Estonia"
+			},					
+			{
+				"location": "Vilnius, Lithuania"
+			},								
+			{
+				"location": "Kaunas, Lithuania"
+			},
+			{
+				"location": "Stockholm, Sweden"
+			},											
+			{
+				"location": "Stockholm, Sweden"
+			},								
+			{
+				"location": "Malmo, Sweden"
+			},					
+			{
+				"location": "Helsinki, Finland"
+			},																										
+			{
+				"location": "Oslo, Norway"
+			},							
+			{
+				"location": "Copenhagen, Denmark"
+			},																								
 			{
 				"location": "Riga, Latvia"
 			}

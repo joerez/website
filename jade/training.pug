@@ -4,37 +4,37 @@ html
     head
         meta(charset="utf-8")
         meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1")
-        title #{title} - Training and Certification classes
-        meta(name="description" content="#{metaDescription}")
-        meta(name="keywords" content="#{keywords}")
+        title #{self.title} - Training and Certification classes
+        meta(name="description" content="#{self.metaDescription}")
+        meta(name="keywords" content="#{self.keywords}")
 
-        meta(property="og:image" content!="https://e.enpose.co/?key=WwAWR9ONtN&w=1280&h=500&url=https://devchampions.com/#{url}")
-        meta(property="og:url" content="http://devchampions.com/#{url}")
+        meta(property="og:image" content!="https://e.enpose.co/?key=WwAWR9ONtN&w=1280&h=500&url=https://devchampions.com/#{self.url}")
+        meta(property="og:url" content="http://devchampions.com/#{self.url}")
         meta(property="og:type" content="website")
-        meta(property="og:title" content="#{title} - Training and Certification")
-        meta(property="og:description" content="#{metaDescription}")
+        meta(property="og:title" content="#{self.title} - Training and Certification")
+        meta(property="og:description" content="#{self.metaDescription}")
         meta(property="fb:admins" content="devchampions")
-        meta(property="dc:date" content="#{date}")
-        meta(property="dc:location" content="#{location}")
+        meta(property="dc:date" content="#{self.date}")
+        meta(property="dc:location" content="#{self.location}")
 
         meta(name="twitter:card" content="summary_large_image")
         meta(name="twitter:site" content="@devchampions")
         meta(name="twitter:creator" content="@devchampions")
-        meta(name="twitter:title" content="#{title} - Training and Certification")
-        meta(name="twitter:description" content="#{metaDescription}")
-        meta(name="twitter:image" content!="https://e.enpose.co/?key=WwAWR9ONtN&w=1280&h=500&url=https://devchampions.com/#{url}")
+        meta(name="twitter:title" content="#{self.title} - Training and Certification")
+        meta(name="twitter:description" content="#{self.metaDescription}")
+        meta(name="twitter:image" content!="https://e.enpose.co/?key=WwAWR9ONtN&w=1280&h=500&url=https://devchampions.com/#{self.url}")
 
         link(rel="shortcut icon" href="/favicon.ico")
         link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
         link(rel="stylesheet" href="/css/training.css")
-        if customBg
+        if self.customBg
             style
                 | header#header {
-                |    background-image: url(#{customBg})
+                |    background-image: url(#{self.customBg})
                 | }
     body
         script(src="/js/main.js")
-        include facebook.jade
+        include facebook.pug
         header#header
             .container
                 .menu
@@ -42,17 +42,17 @@ html
                 .logo
                     h1
                         a(href="#")
-                            if badge
+                            if self.badge
                                 img.badge(src='/img/' + badge + '.png' alt="Certificate")
-                            strong  #{title}
-                if date
-                    h2 #{date}, #{location}
+                            strong  #{self.title}
+                if self.date
+                    h2 #{self.date}, #{self.location}
                     h2
                         a.action2(href="#offers") Book now
                 else
-                    h2 #{location}
-                if locations
-                    each location in locations
+                    h2 #{self.location}
+                if self.locations
+                    each location in self.locations
                         h3 #{location.date}, #{location.city}     
                     h3 &nbsp;                            
                     h2
@@ -68,19 +68,19 @@ html
                             section.shorty
                                 i(class="fa roundy fa-group")
                                 h2 Audience
-                                p #{audience}
+                                p #{self.audience}
                             section.shorty
                                 i(class="fa roundy fa-certificate")
                                 h2 Certification
-                                p #{certification}
+                                p #{self.certification}
                                 p
-                                    if exampleCertificate
-                                        a(href='#{exampleCertificate}' target='_blank')
+                                    if self.exampleCertificate
+                                        a(href='#{self.exampleCertificate}' target='_blank')
                                             | View example certificate
                             section.shorty
                                 i(class="fa roundy fa-globe")
                                 h2 Language
-                                p #{language}
+                                p #{self.language}
             block testimonials
             section#trainer
                 .container
@@ -89,16 +89,16 @@ html
                             h1.title Trainer
                         section
                             .trainer
-                                div(class='pic icon-' + trainer.pic)
+                                div(class='pic icon-' + self.trainer.pic)
                                 div
-                                    a(href='https://twitter.com/' + trainer.twitter)
-                                        img(src="/img/twitter.png" alt="#{trainer.twitter}")
-                                    strong &nbsp;#{trainer.name}
+                                    a(href='https://twitter.com/' + self.trainer.twitter)
+                                        img(src="/img/twitter.png" alt="#{self.trainer.twitter}")
+                                    strong &nbsp;#{self.trainer.name}
                                     br
-                                    | #{trainer.title}
+                                    | #{self.trainer.title}
                             .description
                                 block trainer
-            if address
+            if self.address
                 section#location
                     .container
                         header
@@ -108,17 +108,17 @@ html
                                 section
                                     h2
                                         strong Address:&nbsp;
-                                        | #{address}
-                            if locationPictures
+                                        | #{self.address}
+                            if self.locationPictures
                                 .locations
-                                    each picture, no in locationPictures
+                                    each picture, no in self.locationPictures
                                         section.location
                                             img(src="#{picture}")
             section#offers
                 .container
                     header
                         h1 Booking
-                    each offer, no in offers
+                    each offer, no in self.offers
                         if offer.name
                             .offer
                                 h2 #{offer.name}
@@ -139,9 +139,9 @@ html
                         p
                             | * This training is a subject to training cancellation&nbsp;
                             a.darken(href="/cancel.html") policy
-        include footer.jade
-        include ga.jade
-        include tawk.jade
-        include twitter.jade
-        include yandex.jade
+        include footer.pug
+        include ga.pug
+        include tawk.pug
+        include twitter.pug
+        include yandex.pug
 

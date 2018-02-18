@@ -10,6 +10,9 @@ html(itemscope itemtype="http://schema.org/Organization")
 
         meta(property="fb:admins" content="devchampions")
 
+        each training in all_trainings
+            meta(property="dc:training" content=training.url)
+
         meta(property="og:url" content="http://devchampions.com")
         meta(property="og:type" content="website")
         meta(property="og:title" content="DevChampions – Relevant training courses for IT professionals")
@@ -29,7 +32,7 @@ html(itemscope itemtype="http://schema.org/Organization")
         link(rel="stylesheet" href="/css/style.css")
         script(src="/js/main.js")
     body
-        include facebook.jade
+        include facebook.pug
         header#header
             .container
                 .menu
@@ -101,7 +104,7 @@ html(itemscope itemtype="http://schema.org/Organization")
                                 | #{training.description}
                                 .actions
                                     .more
-                                        a.action(href="#{training.url}") More information
+                                        a.action(href=training.url) More information
                                     .social
                                         .fb-like(data-href="http://devchampions.com/#{training.url}" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true")
                 p
@@ -115,8 +118,8 @@ html(itemscope itemtype="http://schema.org/Organization")
                         | Never miss a training by&nbsp;
                         a.darken(href="http://devchampions.us12.list-manage1.com/subscribe?u=116ead2ab26f64dec3cbc60b5&id=c62c07ab37") subscribing
                         |  to our mailing list. We will keep you posted only on major happenings and announcements.
-        include footer.jade
-        include ga.jade
-        include tawk.jade
-        include twitter.jade
-        include yandex.jade
+        include footer.pug
+        include ga.pug
+        include tawk.pug
+        include twitter.pug
+        include yandex.pug
