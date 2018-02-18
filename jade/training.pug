@@ -75,7 +75,7 @@ html
                                 p #{self.certification}
                                 p
                                     if self.exampleCertificate
-                                        a(href='#{self.exampleCertificate}' target='_blank')
+                                        a(target='_blank' href=self.exampleCertificate)
                                             | View example certificate
                             section.shorty
                                 i(class="fa roundy fa-globe")
