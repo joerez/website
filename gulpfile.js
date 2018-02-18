@@ -19,11 +19,11 @@ var gulp = require('gulp'),
     data = require('gulp-data'),
     jade = require('gulp-jade'),
     gpug = require('gulp-pug'),    
-    moment = require('moment'),
+    moment = require('moment'),    
     glob = require('glob'),
     path = require('path'),
+    fse = require('fs-extra'),    
     pug = require('pug'),
-    fs = require('fs'),
     _ = require('lodash');
 
 var publicDir = 'www';
@@ -103,28 +103,18 @@ gulp.task('jade', function () {
                 }                
             })
             .flatMap()
-            // generating multi-landing trainings
+            // generating multi-landing trainings for different locations
             .map(function(training) {
                 var landings = _.map(training.landings ? training.landings.locations : [], function(it) {
-                   return _.extend({}, training, { landing: true });
+                    var city = it.location.split(',')[0].trim().toLowerCase();
+                    return _.extend({}, training, { 
+                        date : it.date,
+                        url: training.url + '/' + city,
+                        location: it.location,
+                        landing: true 
+                    });
                 });
                 return _.concat(landings, training);
-            })
-            .flatMap()
-            // generating landing pages for different locations
-            .map(function(training) {
-                if (training.landing) {
-                    return _.map(training.landings ? training.landings.locations : [], function(it) {
-                        var city = it.location.split(',')[0].trim().toLowerCase();
-                        return _.extend({}, training, {
-                                date : it.date,
-                                url: training.url + '/' + city,
-                                location: it.location
-                        });
-                    });
-                } else {
-                    return training;
-                }
             })
             .flatMap()
             // generating landing pages for different dates
@@ -186,7 +176,7 @@ gulp.task('jade', function () {
             self: true, 
             cache: true
         }))
-        fs.writeFileSync(publicDir + '/' + tr.url + '/index.html', html);
+        fse.outputFileSync(publicDir + '/' + tr.url + '/index.html', html);
     })
 });
 
