@@ -4,25 +4,25 @@ html
     head
         meta(charset="utf-8")
         meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1")
-        title #{self.title} - Training and Certification classes
-        meta(name="description" content="#{self.metaDescription}")
-        meta(name="keywords" content="#{self.keywords}")
+        title=self.title + " - Training and Certification classes"
+        meta(name="description" content=self.metaDescription)
+        meta(name="keywords" content=self.keywords)
 
-        meta(property="og:image" content!="https://e.enpose.co/?key=WwAWR9ONtN&w=1280&h=500&url=https://devchampions.com/#{self.url}")
-        meta(property="og:url" content="http://devchampions.com/#{self.url}")
+        meta(property="og:image" content!="https://e.enpose.co/?key=WwAWR9ONtN&w=1280&h=500&url=https://devchampions.com/" + self.url)
+        meta(property="og:url" content="http://devchampions.com/" + self.url)
         meta(property="og:type" content="website")
-        meta(property="og:title" content="#{self.title} - Training and Certification")
-        meta(property="og:description" content="#{self.metaDescription}")
+        meta(property="og:title" content=self.title + " - Training and Certification")
+        meta(property="og:description" content=self.metaDescription)
         meta(property="fb:admins" content="devchampions")
-        meta(property="dc:date" content="#{self.date}")
-        meta(property="dc:location" content="#{self.location}")
+        meta(property="dc:date" content=self.date)
+        meta(property="dc:location" content=self.location)
 
         meta(name="twitter:card" content="summary_large_image")
         meta(name="twitter:site" content="@devchampions")
         meta(name="twitter:creator" content="@devchampions")
-        meta(name="twitter:title" content="#{self.title} - Training and Certification")
-        meta(name="twitter:description" content="#{self.metaDescription}")
-        meta(name="twitter:image" content!="https://e.enpose.co/?key=WwAWR9ONtN&w=1280&h=500&url=https://devchampions.com/#{self.url}")
+        meta(name="twitter:title" content=self.title + " - Training and Certification")
+        meta(name="twitter:description" content=self.metaDescription)
+        meta(name="twitter:image" content!="https://e.enpose.co/?key=WwAWR9ONtN&w=1280&h=500&url=https://devchampions.com/" + self.url)
 
         link(rel="shortcut icon" href="/favicon.ico")
         link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
@@ -92,7 +92,7 @@ html
                                 div(class='pic icon-' + self.trainer.pic)
                                 div
                                     a(href='https://twitter.com/' + self.trainer.twitter)
-                                        img(src="/img/twitter.png" alt="#{self.trainer.twitter}")
+                                        img(src="/img/twitter.png" alt=self.trainer.twitter)
                                     strong &nbsp;#{self.trainer.name}
                                     br
                                     | #{self.trainer.title}
@@ -129,7 +129,7 @@ html
                                 .price
                                     .child #{offer.price}€
                                 .actions
-                                    a.action(href="#{offer.book ? offer.book : book}") Book now
+                                    a.action(href=offer.book) Book now
                         else
                             .polyfill &nbsp;
                 .container
