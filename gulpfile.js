@@ -14,6 +14,7 @@ var gulp = require('gulp'),
     combine = require('gulp-jsoncombine'),
     spritesmith = require('gulp.spritesmith'),
     screenshots = require('gulp-local-screenshots'),
+    cityTimezones = require('city-timezones'),
     sequence = require('gulp-sequence'),    
     util = require('gulp-util'),
     data = require('gulp-data'),
@@ -106,10 +107,14 @@ gulp.task('jade', function () {
             // generating multi-landing trainings for different locations
             .map(function(training) {
                 var landings = _.map(training.landings ? training.landings.locations : [], function(it) {
-                    var city = it.location.split(',')[0].trim().toLowerCase();
+                    var city = it.location.split(',')[0].trim();
+                    var timezones = cityTimezones.lookupViaCity(city);
+                    if (!timezones.length) {
+                        console.log("Timezone cannot be resolved for " + city)
+                    }
                     return _.extend({}, training, { 
                         date : it.date,
-                        url: training.url + '/' + city,
+                        url: training.url + '/' + city.toLowerCase(),
                         location: it.location,
                         landing: true 
                     });

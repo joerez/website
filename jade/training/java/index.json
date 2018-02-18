@@ -51,7 +51,7 @@
 				"location": "Hamburg, Germany"
 			},
 			{
-				"location": "Dusseldorf, Germany"
+				"location": "Düsseldorf, Germany"
 			},															
 			{
 				"location": "Munich, Germany"
@@ -81,7 +81,7 @@
 				"location": "Glasgow, Scotland"
 			},
 			{
-				"location": "Zurich, Switzerland"
+				"location": "Zürich, Switzerland"
 			},									
 			{
 				"location": "Geneva, Switzerland"
@@ -90,7 +90,7 @@
 				"location": "Brussels, Belgium"
 			},
 			{
-				"location": "Antwerp, Belgium"
+				"location": "Antwerpen, Belgium"
 			},
 			{
 				"location": "Luxembourg, Luxembourg"
@@ -99,7 +99,7 @@
 				"location": "Warsaw, Poland"
 			},						
 			{
-				"location": "Krakow, Poland"
+				"location": "Kraków, Poland"
 			},						
 			{
 				"location": "Prague, Czech Republic"
@@ -139,12 +139,9 @@
 			},
 			{
 				"location": "Stockholm, Sweden"
-			},											
+			},
 			{
-				"location": "Stockholm, Sweden"
-			},								
-			{
-				"location": "Malmo, Sweden"
+				"location": "Malmö, Sweden"
 			},					
 			{
 				"location": "Helsinki, Finland"
@@ -153,7 +150,7 @@
 				"location": "Oslo, Norway"
 			},							
 			{
-				"location": "Copenhagen, Denmark"
+				"location": "København, Denmark"
 			},																								
 			{
 				"location": "Riga, Latvia"
