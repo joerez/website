@@ -133,7 +133,7 @@ gulp.task('jade', function () {
                     return _.map(training.landings.dates, function(it) {
                         var month = it.date.match(/([A-Za-z]+)/)[0].toLowerCase();
                         var url = training.url + '/' + month;
-                        console.log("Generating a training (landing) at " + url);
+                        // console.log("Generating a training (landing) at " + url);
                         return _.extend({}, training,
                             {
                                 date : it.date,
@@ -141,7 +141,7 @@ gulp.task('jade', function () {
                             });
                     })
                 } else {
-                    console.log("Generating a training at " + training.url);
+                    // console.log("Generating a training at " + training.url);
                     return training;
                 }
             })
