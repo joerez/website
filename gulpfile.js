@@ -15,6 +15,7 @@ var gulp = require('gulp'),
     spritesmith = require('gulp.spritesmith'),
     screenshots = require('gulp-local-screenshots'),
     cityTimezones = require('city-timezones'),
+    removeDiacritics = require('diacritics').remove,
     sequence = require('gulp-sequence'),    
     util = require('gulp-util'),
     data = require('gulp-data'),
@@ -114,7 +115,7 @@ gulp.task('jade', function () {
                     }
                     return _.extend({}, training, { 
                         date : it.date,
-                        url: training.url + '/' + city.toLowerCase(),
+                        url: training.url + '/' + removeDiacritics(city.toLowerCase()),
                         location: it.location,
                         landing: true 
                     });
